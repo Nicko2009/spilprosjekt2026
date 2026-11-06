@@ -1,5 +1,12 @@
-[gd_scene format=3 uid="uid://d2vfyx5d2utuf"]
+[gd_scene format=3 uid="uid://cb6nekd5lqyat"]
 
-[node name="Level 1" type="Node2D" unique_id=1663798047]
+[node name="Level 1" type="Node2D" unique_id=2105351761]
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=709670291]
+[node name="Label" type="Label" parent="." unique_id=213147571]
+offset_left = 451.0
+offset_top = 262.0
+offset_right = 755.0
+offset_bottom = 426.0
+theme_override_font_sizes/font_size = 40
+text = "Level 1
+"
