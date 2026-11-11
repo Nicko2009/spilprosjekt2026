@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://brdq6kelgvet0"]
 
 [ext_resource type="Script" uid="uid://d0sq88dw1pyqp" path="res://menu.gd" id="1_lti8b"]
-[ext_resource type="PackedScene" uid="uid://d2vfyx5d2utuf" path="res://BG.tscn" id="2_ouk20"]
+[ext_resource type="PackedScene" uid="uid://d2vfyx5d2utuf" path="res://level_1.tscn" id="2_ouk20"]
 
 [node name="Menu" type="Node2D" unique_id=2140795352]
 script = ExtResource("1_lti8b")
@@ -25,6 +25,10 @@ text = "Quit
 "
 
 [node name="Start menu" parent="." unique_id=997325000 instance=ExtResource("2_ouk20")]
+position = Vector2(444, 1416)
+
+[node name="Level 1" parent="." unique_id=2105351761 instance=ExtResource("2_ouk20")]
+position = Vector2(530, 1141)
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
