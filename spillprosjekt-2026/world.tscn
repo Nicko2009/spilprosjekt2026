@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://b6q8mdrb26528"]
+
+[ext_resource type="Texture2D" uid="uid://b3qjkr08vxt6" path="res://stortinget.png" id="1_f3sb7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fj7yv"]
+albedo_texture = ExtResource("1_f3sb7")
+
+[sub_resource type="BoxMesh" id="BoxMesh_3a8dq"]
+size = Vector3(30, 1, 30)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6nixh"]
+size = Vector3(30, 1, 30)
+
+[node name="world" type="Node3D" unique_id=1017052194]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1876235070]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=407234222]
+material_override = SubResource("StandardMaterial3D_fj7yv")
+mesh = SubResource("BoxMesh_3a8dq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=3973165]
+shape = SubResource("BoxShape3D_6nixh")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=196932851]
