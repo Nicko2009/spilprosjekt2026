@@ -11,6 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://bsm85tcytcykw" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Sidewalk_Planter.gltf" id="9_tereu"]
 [ext_resource type="PackedScene" uid="uid://ddwd8n6cj2au8" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Sidewalk_Corner_Round_3m.gltf" id="10_cdqbm"]
 [ext_resource type="PackedScene" uid="uid://bf0mgfrjpr2vj" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Street_2Lane_noSidewalk.gltf" id="11_tereu"]
+[ext_resource type="PackedScene" uid="uid://dmo03hp4a1npo" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Stairs_Entrance_Concrete.gltf" id="12_cdqbm"]
+[ext_resource type="PackedScene" uid="uid://c1lt7cwpbyl0l" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Stairs_Rails_Metal.gltf" id="13_imku0"]
 
 [node name="Node3D" type="Node3D" unique_id=622863024]
 
@@ -150,7 +152,7 @@ transform = Transform3D(-0.0059725028, 0, -0.9999821, 0, 1, 0, 0.9999821, 0, -0.
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.328873, 0, -0.0132751465)
 
 [node name="Tinkercad GLTF Scene" parent="." unique_id=716716177 instance=ExtResource("5_jka67")]
-transform = Transform3D(0.49509418, 0, 0, 0, 1, 0, 0, 0, 0.4125096, 101.366165, 0.03555298, 91.289795)
+transform = Transform3D(-0.49477622, 0, -0.014781451, 0, 0.99999994, 0, 0.017740704, 0, -0.41224468, 101.366165, 0.03555298, 91.289795)
 
 [node name="Street_4Lane_noSidewalk2" parent="." unique_id=990152830 instance=ExtResource("6_i5arm")]
 transform = Transform3D(0.0034406483, 0, 1.0363282, 0, 0.99999994, 0, -4.978248, 0, 0.0007162448, 100.10461, 0.30264854, 10.219975)
@@ -174,7 +176,7 @@ transform = Transform3D(-58.820335, -0.001031922, 0.0053715673, 0.00660035, 0.36
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5.9163704, 88.34721, 0.057700396, 9.361711)
 
 [node name="Sidewalk_Planter3" parent="." unique_id=1893184041 instance=ExtResource("9_tereu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 10.144682, 150.89401, 7.9487367, 47.370724)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 5.9398446, 111.77352, 0.1449132, 9.30778)
 
 [node name="Sidewalk_Corner_Round_3m2" parent="." unique_id=153410533 instance=ExtResource("10_cdqbm")]
 transform = Transform3D(1.6303527, 0, 0, 0, 1, 0, 0, 0, 1.6303527, 91.452774, 0.099928856, 23.767967)
@@ -187,3 +189,15 @@ transform = Transform3D(2.8835897, 0, 0, 0, 1, 0, 0, 0, 1, 100.51641, 0.23880148
 
 [node name="Street_2Lane_noSidewalk3" parent="." unique_id=714240873 instance=ExtResource("11_tereu")]
 transform = Transform3D(2.9953923, 0, 0, 0, 1, 0, 0, 0, 1, 118.00926, 0.23834133, 27.87022)
+
+[node name="Street_2Lane_noSidewalk4" parent="." unique_id=195218021 instance=ExtResource("11_tereu")]
+transform = Transform3D(4.667218, 0, 0, 0, 1, 0, 0, 0, 1, 77.933464, 0.2419424, 27.883413)
+
+[node name="Stairs_Entrance_Concrete2" parent="." unique_id=381788679 instance=ExtResource("12_cdqbm")]
+transform = Transform3D(-0.9901996, 0, -0.060019277, 0, 1.8738536, 0, 0.03231867, 0, -1.8389083, 60.992847, 0, 52.21579)
+
+[node name="Stairs_Rails_Metal2" parent="." unique_id=1919685972 instance=ExtResource("13_imku0")]
+transform = Transform3D(-1.0036364, 0, 0.0009774996, 0, 1, 0, -0.0009809833, 0, -1.0000722, 60.962673, 0.88014364, 52.11715)
+
+[node name="Stairs_Rails_Metal3" parent="." unique_id=72244676 instance=ExtResource("13_imku0")]
+transform = Transform3D(-0.981603, 0, -0.04524964, 0, 1, 0, 0.044436716, 0, -0.9995606, 60.95357, 0.10098505, 49.879707)
