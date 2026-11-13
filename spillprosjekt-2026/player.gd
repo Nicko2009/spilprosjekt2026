@@ -1,6 +1,10 @@
 
 extends CharacterBody3D
 
+@export var projectile_scene: PackedScene
+@export var max_health: int = 100
+var health: int = 100
+
 @export var walk_speed: float = 5.0
 @export var sprint_speed: float = 8.0
 @export var jump_velocity: float = 4.5
@@ -16,6 +20,7 @@ var camera_pitch: float = 0.0
 
 
 func _ready():
+	add_to_group("player")
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 
@@ -32,6 +37,15 @@ func _unhandled_input(event):
 			)
 
 			head.rotation.x = camera_pitch
+
+	if event is InputEventKey and event.pressed:
+		if event.keycode == KEY_ESCAPE:
+			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+
+	if event is InputEventMouseButton:
+		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+			if Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+				shoot()
 
 	if event is InputEventKey and event.pressed:
 		if event.keycode == KEY_ESCAPE:
@@ -74,5 +88,25 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, walk_speed)
 		velocity.z = move_toward(velocity.z, 0, walk_speed)
-
 	move_and_slide()
+
+func take_damage(amount: int):
+	health -= amount
+	print("Player har", health, "liv igjen")
+
+	if health <= 0:
+		print("Player er ute av spillet")
+		
+func shoot():
+	if projectile_scene == null:
+		print("Ingen kule er valgt!")
+		return
+		
+	var projectile = projectile_scene.instantiate()
+	get_tree().current_scene.add_child(projectile)
+		
+	var start_position = head.global_position + (-head.global_transform.basis.z * 1.5)
+	var direction = -head.global_transform.basis.z
+		
+	projectile.global_position = start_position
+	projectile.setup(direction)

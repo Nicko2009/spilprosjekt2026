@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b3ff4t4tep2kr"]
 
 [ext_resource type="Script" uid="uid://rwoa08i072ug" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="PackedScene" uid="uid://bwo0yh1dibric" path="res://energy_ball.tscn" id="2_onrkg"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_22ivu"]
 radius = 0.35
@@ -9,6 +10,7 @@ height = 1.8
 [node name="player" type="CharacterBody3D" unique_id=1947800497]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 script = ExtResource("1_4flbx")
+projectile_scene = ExtResource("2_onrkg")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1487505399]
 shape = SubResource("CapsuleShape3D_22ivu")
