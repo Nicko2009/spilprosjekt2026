@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bwo0yh1dibric"]
+
+[ext_resource type="Script" uid="uid://b7m7vs7prffpa" path="res://energy_ball.gd" id="1_2hwwp"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_6nixh"]
+radius = 0.2
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_22ivu"]
+radius = 0.2
+
+[node name="EnergyBall" type="Area3D" unique_id=1270596362]
+script = ExtResource("1_2hwwp")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=547528103]
+mesh = SubResource("SphereMesh_6nixh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=876197877]
+shape = SubResource("SphereShape3D_22ivu")
