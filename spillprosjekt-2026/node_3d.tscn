@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cc6viktttxxst" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Building_Large_2.gltf" id="2_a0tk4"]
 [ext_resource type="PackedScene" uid="uid://d1ukqqlh5dy0v" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Building_Medium_2_001.gltf" id="3_a0tk4"]
 [ext_resource type="PackedScene" uid="uid://d1ej8s8hmqlac" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Building_Small_1.gltf" id="4_r3fl7"]
+[ext_resource type="PackedScene" uid="uid://dpwb2ahf55l02" path="res://Stortinget modell v2-5.glb" id="5_jka67"]
 
 [node name="Node3D" type="Node3D" unique_id=622863024]
 
@@ -141,3 +142,6 @@ transform = Transform3D(-0.0059725028, 0, -0.9999821, 0, 1, 0, 0.9999821, 0, -0.
 
 [node name="Building_Small_14" parent="Building_Small_15" unique_id=1736317859 instance=ExtResource("4_r3fl7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.328873, 0, -0.0132751465)
+
+[node name="Tinkercad GLTF Scene" parent="." unique_id=716716177 instance=ExtResource("5_jka67")]
+transform = Transform3D(0.49509418, 0, 0, 0, 1, 0, 0, 0, 0.4125096, 98.90393, 0.03555298, 91.289795)
