@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1ydvrbqlwkyk"
-path.s3tc="res://.godot/imported/T_Trim_Normal.png-43da0d10753d819c0ec9445422145093.s3tc.ctex"
+path.s3tc="res://.godot/imported/T_Trim_Normal.png-eed17653bc1b3ec647e32ea10f2242e7.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Downtown City MegaKit[Standard]/textures/T_Trim_Normal.png"
-dest_files=["res://.godot/imported/T_Trim_Normal.png-43da0d10753d819c0ec9445422145093.s3tc.ctex"]
+source_file="res://Downtown City MegaKit[Standard]/Textures/T_Trim_Normal.png"
+dest_files=["res://.godot/imported/T_Trim_Normal.png-eed17653bc1b3ec647e32ea10f2242e7.s3tc.ctex"]
 
 [params]
 

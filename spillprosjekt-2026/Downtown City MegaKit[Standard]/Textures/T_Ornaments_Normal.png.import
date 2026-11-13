@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ckv2jt4png3uo"
-path.s3tc="res://.godot/imported/T_Ornaments_Normal.png-193b9cd21a15bac593b028a109d3ecf7.s3tc.ctex"
+path.s3tc="res://.godot/imported/T_Ornaments_Normal.png-d84a914683a4b4da6d0f76bbbbcdac83.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Downtown City MegaKit[Standard]/textures/T_Ornaments_Normal.png"
-dest_files=["res://.godot/imported/T_Ornaments_Normal.png-193b9cd21a15bac593b028a109d3ecf7.s3tc.ctex"]
+source_file="res://Downtown City MegaKit[Standard]/Textures/T_Ornaments_Normal.png"
+dest_files=["res://.godot/imported/T_Ornaments_Normal.png-d84a914683a4b4da6d0f76bbbbcdac83.s3tc.ctex"]
 
 [params]
 
