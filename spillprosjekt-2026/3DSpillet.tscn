@@ -14,6 +14,13 @@
 [ext_resource type="PackedScene" uid="uid://c1lt7cwpbyl0l" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Stairs_Rails_Metal.gltf" id="12_x5eqr"]
 [ext_resource type="PackedScene" uid="uid://bc2pqnylquhgi" path="res://Stortinget modell v2-7.glb" id="13_cc7hj"]
 [ext_resource type="PackedScene" uid="uid://busmdwf425m6e" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Brick_InteriorWall_1.gltf" id="14_7fevm"]
+[ext_resource type="PackedScene" uid="uid://beogksr18ij0y" path="res://stylizedGrassMeshes/grass.glb" id="16_i38at"]
+[ext_resource type="Texture2D" uid="uid://dq3a4n8326jnu" path="res://grass_Wild_Grass_1_Default_1_grass_green_Color.jpg" id="16_mo71q"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i38at"]
+albedo_texture = ExtResource("16_mo71q")
+
+[sub_resource type="BoxMesh" id="BoxMesh_rgbhm"]
 
 [node name="3DSPILLET" type="Node3D" unique_id=622863024]
 
@@ -192,13 +199,13 @@ transform = Transform3D(2.9953923, 0, 0, 0, 1, 0, 0, 0, 1, 118.00926, 0.23834133
 transform = Transform3D(4.667218, 0, 0, 0, 1, 0, 0, 0, 1, 77.933464, 0.2419424, 27.883413)
 
 [node name="Stairs_Entrance_Concrete2" parent="." unique_id=381788679 instance=ExtResource("11_q7fu7")]
-transform = Transform3D(-1.1479167, 0, -0.07096889, 0, 2.0915282, 0, 0.037466396, 0, -2.174385, 60.86467, 0, 52.923767)
+transform = Transform3D(-1.1479167, 0, -0.07096889, 0, 2.0915282, 0, 0.037466396, 0, -2.174385, 63.21991, 0, 50.444107)
 
 [node name="Stairs_Rails_Metal2" parent="." unique_id=1919685972 instance=ExtResource("12_x5eqr")]
-transform = Transform3D(-1.1487315, 0, 0.0009773615, 0, 1, 0, -0.0011228034, 0, -0.9999309, 60.812912, 1.2277117, 53.06555)
+transform = Transform3D(-1.1487315, 0, 0.0009773615, 0, 1, 0, -0.0011228034, 0, -0.9999309, 63.195488, 1.2277117, 50.646236)
 
-[node name="Stairs_Rails_Metal3" parent="." unique_id=72244676 instance=ExtResource("12_x5eqr")]
-transform = Transform3D(-1.1303722, 0, -0.04557326, 0, 1, 0, 0.051171426, 0, -1.0067092, 60.818047, 0.41282105, 50.85833)
+[node name="Stairs_Rails_Metal3" parent="Stairs_Rails_Metal2" unique_id=72244676 instance=ExtResource("12_x5eqr")]
+transform = Transform3D(0.9839734, 0, 0.040529236, 0, 1, 0, -0.05227985, 0, 1.0067333, -0.0025901794, -0.8148906, 2.2073784)
 
 [node name="Street_2Lane_noSidewalk5" parent="." unique_id=494657800 instance=ExtResource("10_q6jbf")]
 transform = Transform3D(7.1589117, 0, 0, 0, 1, 0, 0, 0, 1, 148.29063, 0.23859596, 27.866156)
@@ -207,25 +214,66 @@ transform = Transform3D(7.1589117, 0, 0, 0, 1, 0, 0, 0, 1, 148.29063, 0.23859596
 transform = Transform3D(-0.15018086, -0.013467642, -0.8633865, -0.0020227656, 0.9999092, -0.0116288345, 10.919044, -4.285262e-12, -0.0118772, 167.04701, 0.32480955, 57.892128)
 
 [node name="Tinkercad GLTF Scene2" parent="." unique_id=191943676 instance=ExtResource("13_cc7hj")]
-transform = Transform3D(-0.48932847, 0, -0.02145778, 0, 1, 0, 0.025644664, 0, -0.4094381, 101.3, 0.036, 91.29)
+transform = Transform3D(-0.48998445, 0, 0.003266167, 0, 1, 0, -0.003903471, 0, -0.409987, 101.3, 0.036, 91.29)
 
 [node name="Stairs_Entrance_Concrete3" parent="." unique_id=469540242 instance=ExtResource("11_q7fu7")]
-transform = Transform3D(-1.1564065, 0, -0.11146671, 0, 2.1031241, 0, 0.05634663, 0, -2.2876408, 138.13928, 0, 48.870136)
+transform = Transform3D(-1.1576544, 0, 0.03353098, 0, 2.103124, 0, -0.016949955, 0, -2.2901094, 140.62392, 0, 51.18966)
 
 [node name="Stairs_Rails_Metal4" parent="." unique_id=783706425 instance=ExtResource("12_x5eqr")]
-transform = Transform3D(-1.0990157, 0, -0.06980559, 0, 1, 0, 0.0766129, 0, -1.0013647, 138.20181, 1.2859907, 48.902763)
+transform = Transform3D(-1.1016457, 0, 0.0082357675, 0, 0.99999994, 0, -0.009038899, 0, -1.0037609, 140.65874, 1.2859907, 51.20948)
 
-[node name="Stairs_Rails_Metal5" parent="." unique_id=1617091156 instance=ExtResource("12_x5eqr")]
-transform = Transform3D(-1.1095961, 0, -0.070344426, 0, 1, 0, 0.077646, 0, -1.0052532, 138.04451, 0.47367072, 46.62578)
+[node name="Stairs_Rails_Metal5" parent="Stairs_Rails_Metal4" unique_id=1617091156 instance=ExtResource("12_x5eqr")]
+transform = Transform3D(1.0096458, 0, 0.00024246424, 0, 0.99999994, 0, -0.0002937168, 0, 1.0039017, -0.0012893677, -0.8123199, 2.2737846)
 
 [node name="Sidewalk_Planter4" parent="." unique_id=1281228385 instance=ExtResource("8_jcvmf")]
-transform = Transform3D(2.9312322, 0, 0.05032155, 0, 2.364459, 0, -0.13725282, 0, 1.0746894, 65.542046, 0.01157856, 51.096848)
+transform = Transform3D(2.9338682, 0, 0.02130534, 0, 2.3644588, 0, -0.058110654, 0, 1.0756558, 67.640045, 0.01157856, 49.06607)
 
 [node name="Sidewalk_Planter5" parent="." unique_id=151599638 instance=ExtResource("8_jcvmf")]
-transform = Transform3D(3.0309913, 0, 0.048173897, 0, 2.5156891, 0, -0.14293793, 0, 1.0215249, 55.81062, 0, 51.519855)
+transform = Transform3D(3.0334702, 0, -0.024760425, 0, 2.5156891, 0, 0.07346727, 0, 1.0223603, 58.341213, 0, 49.003464)
 
 [node name="Brick_InteriorWall_12" parent="." unique_id=2004322552 instance=ExtResource("14_7fevm")]
 transform = Transform3D(-0.18957265, 0, -1.2892861, 0, 18.068419, 0, 15.11666, 0, -0.016168479, 4.1211414, -1.3351545, 96.06367)
 
 [node name="Brick_InteriorWall_13" parent="." unique_id=625884789 instance=ExtResource("14_7fevm")]
 transform = Transform3D(0.7371279, 0, 2.0733223, 0, 16.63861, 0, -21.107231, 0, 0.07240668, 196.89967, -1.517129, 99.950386)
+
+[node name="Street_2Lane_noSidewalk7" parent="." unique_id=303549969 instance=ExtResource("10_q6jbf")]
+transform = Transform3D(4.666574, 0, 0, 0, 1, 0, 0, 0, 1, 50.240883, 0.281888, 27.873821)
+
+[node name="Street_2Lane_noSidewalk8" parent="." unique_id=987307608 instance=ExtResource("10_q6jbf")]
+transform = Transform3D(-0.20212814, 0, 1.3958843, 0, 1, 0, -24.810534, 0, -0.011372084, 33.175205, 0.28985357, 99.82191)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=448197562]
+transform = Transform3D(125.70935, 0, 0, 0, 2.4768162, 0, 0, 0, 123.8733, 100.69644, -1.1359482, 94.74091)
+material_override = SubResource("StandardMaterial3D_i38at")
+mesh = SubResource("BoxMesh_rgbhm")
+
+[node name="grass" parent="." unique_id=1275249415 instance=ExtResource("16_i38at")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.30412, 0, 49.1841)
+
+[node name="grass2" parent="grass" unique_id=2113760436 instance=ExtResource("16_i38at")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6337128, 0, 0.17199326)
+
+[node name="grass" parent="grass" unique_id=669002895 instance=ExtResource("16_i38at")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.416538, 0, 0.12714767)
+
+[node name="grass3" parent="grass" unique_id=864223126 instance=ExtResource("16_i38at")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.1226845, 0, 0.23740768)
+
+[node name="Sidewalk_Planter6" parent="." unique_id=223011203 instance=ExtResource("8_jcvmf")]
+transform = Transform3D(3.0924206, 0, 0, 0, 1.9593952, 0, 0, 0, 1.1221298, 145.50394, 0.1508658, 49.484283)
+
+[node name="Sidewalk_Planter7" parent="." unique_id=1827332398 instance=ExtResource("8_jcvmf")]
+transform = Transform3D(3.1219692, 0, 0, 0, 1.8738866, 0, 0, 0, 1.0431421, 135.72804, 0, 49.591503)
+
+[node name="grass2" parent="." unique_id=1422757089 instance=ExtResource("16_i38at")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 147.24712, 0, 49.675022)
+
+[node name="grass3" parent="." unique_id=955671835 instance=ExtResource("16_i38at")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 144.16248, 0, 49.59089)
+
+[node name="grass4" parent="." unique_id=451201213 instance=ExtResource("16_i38at")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 137.42665, 0, 49.66784)
+
+[node name="grass5" parent="." unique_id=283506616 instance=ExtResource("16_i38at")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 134.27354, 0, 49.748234)
