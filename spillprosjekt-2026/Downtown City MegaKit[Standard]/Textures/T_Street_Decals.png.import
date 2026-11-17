@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3bpdrdylo66h"
-path.s3tc="res://.godot/imported/T_Street_Decals.png-c397e138d1b1c8a47efb552d38e39efd.s3tc.ctex"
+path.s3tc="res://.godot/imported/T_Street_Decals.png-37d5576b2d8c72c84bd8a665e35fbbef.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Downtown City MegaKit[Standard]/textures/T_Street_Decals.png"
-dest_files=["res://.godot/imported/T_Street_Decals.png-c397e138d1b1c8a47efb552d38e39efd.s3tc.ctex"]
+source_file="res://Downtown City MegaKit[Standard]/Textures/T_Street_Decals.png"
+dest_files=["res://.godot/imported/T_Street_Decals.png-37d5576b2d8c72c84bd8a665e35fbbef.s3tc.ctex"]
 
 [params]
 
