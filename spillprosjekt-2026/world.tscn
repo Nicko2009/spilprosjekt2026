@@ -1,10 +1,9 @@
 [gd_scene format=3 uid="uid://b6q8mdrb26528"]
 
-[ext_resource type="Texture2D" uid="uid://bn16u5c1v0vvq" path="res://grass_Wild_Grass_1_Default_grass_green_Color.jpg" id="1_fj7yv"]
-[ext_resource type="PackedScene" uid="uid://dyxh5cu63cm75" path="res://grass.glb" id="2_tlwt5"]
+[ext_resource type="Texture2D" uid="uid://cqwolscyfly6q" path="res://grass_Wild_Grass_1_Default_grass_green_and_orange_bottom_Color.jpg" id="1_f3sb7"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aqk2v"]
-albedo_texture = ExtResource("1_fj7yv")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fj7yv"]
+albedo_texture = ExtResource("1_f3sb7")
 
 [sub_resource type="BoxMesh" id="BoxMesh_3a8dq"]
 size = Vector3(30, 1, 30)
@@ -18,16 +17,10 @@ size = Vector3(30, 1, 30)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=407234222]
-material_override = SubResource("StandardMaterial3D_aqk2v")
+material_override = SubResource("StandardMaterial3D_fj7yv")
 mesh = SubResource("BoxMesh_3a8dq")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=3973165]
 shape = SubResource("BoxShape3D_6nixh")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=196932851]
-
-[node name="grass" parent="." unique_id=1795638924 instance=ExtResource("2_tlwt5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -140.42941, -14.935135, 105.329704)
-
-[node name="grass2" parent="." unique_id=1841462397 instance=ExtResource("2_tlwt5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.508107, 20.346, 104.6293)

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://rwoa08i072ug" path="res://player.gd" id="1_4flbx"]
 [ext_resource type="PackedScene" uid="uid://bwo0yh1dibric" path="res://energy_ball.tscn" id="2_onrkg"]
+[ext_resource type="PackedScene" uid="uid://bdtu127abflfa" path="res://view_model.tscn" id="3_i3pqv"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_22ivu"]
 radius = 0.35
@@ -21,8 +22,13 @@ transform = Transform3D(0.9999254, 0, 0.012217001, 0, 1, 0, -0.012217001, 0, 0.9
 [node name="Camera3D" type="Camera3D" parent="Head" unique_id=555102761]
 transform = Transform3D(0.9999254, 0, -0.012217001, 0, 1, 0, 0.012217001, 0, 0.9999254, 0, 0, 0)
 
-[node name="Hands" type="Node3D" parent="Head/Camera3D" unique_id=12769252]
+[node name="SubViewportContainer" type="SubViewportContainer" parent="Head/Camera3D" unique_id=1595803564]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="LeftHand" type="MeshInstance3D" parent="Head/Camera3D/Hands" unique_id=525192920]
+[node name="SubViewport" type="SubViewport" parent="Head/Camera3D/SubViewportContainer" unique_id=15969177]
 
-[node name="RightHand" type="MeshInstance3D" parent="Head/Camera3D/Hands" unique_id=1359585903]
+[node name="view_model_camera" parent="Head/Camera3D/SubViewportContainer/SubViewport" unique_id=1241792198 instance=ExtResource("3_i3pqv")]
