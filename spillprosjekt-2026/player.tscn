@@ -7,7 +7,7 @@
 radius = 0.35
 height = 1.8
 
-[node name="player" type="CharacterBody3D" unique_id=1947800497]
+[node name="player" type="CharacterBody3D" unique_id=1947800497 groups=["player"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 script = ExtResource("1_4flbx")
 projectile_scene = ExtResource("2_onrkg")

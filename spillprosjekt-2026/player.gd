@@ -18,11 +18,9 @@ var gravity: float = ProjectSettings.get_setting(
 
 var camera_pitch: float = 0.0
 
-
 func _ready():
 	add_to_group("player")
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
@@ -92,6 +90,7 @@ func _physics_process(delta):
 
 func take_damage(amount: int):
 	health -= amount
+	health = max(health, 0)
 	print("Player har", health, "liv igjen")
 
 	if health <= 0:
@@ -109,4 +108,4 @@ func shoot():
 	var direction = -head.global_transform.basis.z
 		
 	projectile.global_position = start_position
-	projectile.setup(direction)
+	projectile.setup(direction, self)

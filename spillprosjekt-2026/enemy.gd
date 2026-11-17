@@ -2,6 +2,7 @@ extends CharacterBody3D
 
 @export var max_health: int = 100
 var health: int = 100
+
 @export var projectile_scene: PackedScene
 @export var detection_range: float = 20.0
 
@@ -11,6 +12,7 @@ var player: Node3D
 
 
 func _ready():
+	add_to_group("enemy")
 	shoot_timer.timeout.connect(_on_shoot_timer_timeout)
 
 
@@ -56,11 +58,12 @@ func _on_shoot_timer_timeout():
 
 	var target_position = player.global_position + Vector3(0, 1, 0)
 	var direction = (target_position - start_position).normalized()
-
-	projectile.setup(direction)
+	
+	projectile.setup(direction, self)
 
 func take_damage(amount: int):
 	health -= amount
+	health = max(health, 0)
 	print("Enemy har", health, "liv igjen")
 
 	if health <= 0:
