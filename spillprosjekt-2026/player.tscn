@@ -21,6 +21,7 @@ transform = Transform3D(0.9999254, 0, 0.012217001, 0, 1, 0, -0.012217001, 0, 0.9
 
 [node name="Camera3D" type="Camera3D" parent="Head" unique_id=555102761]
 transform = Transform3D(0.9999254, 0, -0.012217001, 0, 1, 0, 0.012217001, 0, 0.9999254, 0, 0, 0)
+cull_mask = 1048573
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="Head/Camera3D" unique_id=1595803564]
 anchors_preset = 15
@@ -30,5 +31,9 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="SubViewport" type="SubViewport" parent="Head/Camera3D/SubViewportContainer" unique_id=15969177]
+transparent_bg = true
+handle_input_locally = false
+render_target_update_mode = 4
 
 [node name="view_model_camera" parent="Head/Camera3D/SubViewportContainer/SubViewport" unique_id=1241792198 instance=ExtResource("3_i3pqv")]
+cull_mask = 1047554

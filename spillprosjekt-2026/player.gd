@@ -11,6 +11,7 @@ var health: int = 100
 @export var mouse_sensitivity: float = 0.002
 
 @onready var head: Node3D = $Head
+@onready var camera = $Head/Camera3D
 
 var gravity: float = ProjectSettings.get_setting(
     "physics/3d/default_gravity"
@@ -21,6 +22,7 @@ var camera_pitch: float = 0.0
 func _ready():
 	add_to_group("player")
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	$Head/Camera3D/SubViewportContainer/SubViewport.size = DisplayServer.window_get_size()
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
@@ -55,6 +57,8 @@ func _unhandled_input(event):
 
 
 func _physics_process(delta):
+	$Head/Camera3D/SubViewportContainer/SubViewport/view_model_camera.global_transform = camera.global_transform
+	
 	# Gravity
 	if not is_on_floor():
 		velocity.y -= gravity * delta
