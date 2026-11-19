@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://blyoe3fq7lniv"]
+
+[ext_resource type="PackedScene" uid="uid://b6q8mdrb26528" path="res://world.tscn" id="1_a202f"]
+[ext_resource type="PackedScene" uid="uid://cb6nekd5lqyat" path="res://level_1.tscn" id="2_noarx"]
+[ext_resource type="PackedScene" uid="uid://dwtvnpvd8b7de" path="res://Clouds 7/guardian.glb" id="4_jka67"]
+
+[node name="Node3D" type="Node3D" unique_id=529115998]
+
+[node name="world" parent="." unique_id=1017052194 instance=ExtResource("1_a202f")]
+transform = Transform3D(1.4718628, 0, 0, 0, 0.013390681, 0, 0, 0, 1, 0.76932436, -1.1920929e-07, 0.99073243)
+
+[node name="Level 1" parent="." unique_id=2105351761 instance=ExtResource("2_noarx")]
+
+[node name="Enemy" type="CharacterBody3D" parent="." unique_id=69058959]
+
+[node name="guardian" parent="Enemy" unique_id=1195882313 instance=ExtResource("4_jka67")]
+
+[node name="shoot" type="Timer" parent="Enemy" unique_id=1465929032]

@@ -1,12 +1,17 @@
 [gd_scene format=3 uid="uid://cb6nekd5lqyat"]
 
+[ext_resource type="PackedScene" uid="uid://dwtvnpvd8b7de" path="res://Clouds 7/guardian.glb" id="1_3hls8"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_hbghi"]
+
 [node name="Level 1" type="Node2D" unique_id=2105351761]
 
-[node name="Label" type="Label" parent="." unique_id=213147571]
-offset_left = 451.0
-offset_top = 262.0
-offset_right = 755.0
-offset_bottom = 426.0
-theme_override_font_sizes/font_size = 40
-text = "Level 1
-"
+[node name="Enemy" type="CharacterBody3D" parent="." unique_id=1274272814]
+
+[node name="guardian" parent="Enemy" unique_id=1195882313 instance=ExtResource("1_3hls8")]
+
+[node name="shoot" type="Timer" parent="Enemy" unique_id=1432790943]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Enemy" unique_id=553334002]
+shape = SubResource("SphereShape3D_hbghi")
+debug_fill = false
