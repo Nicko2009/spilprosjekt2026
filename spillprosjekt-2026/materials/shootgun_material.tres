@@ -1,17 +1,7 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://dxbtm2l6mc1la"]
 
 [ext_resource type="Texture2D" uid="uid://4capllbh6gco" path="res://assets/gun textures/Shotgun_UE4_BaseColor.png" id="1_243ss"]
-[ext_resource type="Texture2D" uid="uid://ble0j83hkm2sc" path="res://assets/gun textures/Shotgun_UE4_OcclusionRoughnessMetallic.png" id="2_siw45"]
-[ext_resource type="Texture2D" uid="uid://f0ukp1ij1vh6" path="res://assets/gun textures/Shotgun_UE4_Normal.png" id="3_lg3kd"]
 
 [resource]
+shading_mode = 0
 albedo_texture = ExtResource("1_243ss")
-metallic = 1.0
-metallic_texture = ExtResource("2_siw45")
-metallic_texture_channel = 2
-roughness_texture = ExtResource("2_siw45")
-roughness_texture_channel = 1
-normal_enabled = true
-normal_texture = ExtResource("3_lg3kd")
-ao_enabled = true
-ao_texture = ExtResource("2_siw45")
