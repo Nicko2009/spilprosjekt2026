@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://chse0txkkaydr" path="res://enemy.gd" id="1_7k104"]
 [ext_resource type="PackedScene" uid="uid://bwo0yh1dibric" path="res://energy_ball.tscn" id="2_4gyqm"]
-[ext_resource type="PackedScene" uid="uid://c2rqxl5rhxq0k" path="res://Tactical+Soldier+02(1).blend" id="3_qi2p4"]
+[ext_resource type="PackedScene" uid="uid://brhpanycb57e2" path="res://assets/gun textures/Blake+v3+-+The+Adventurer+-+280-u.glb" id="3_qi2p4"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3a8dq"]
 radius = 0.36279297
@@ -19,11 +19,11 @@ radius = 0.2
 script = ExtResource("1_7k104")
 projectile_scene = ExtResource("2_4gyqm")
 
-[node name="Tactical+Soldier+02(1)" parent="." unique_id=34130524 instance=ExtResource("3_qi2p4")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, -0.029999971, 0)
+[node name="Blake+v3+-+The+Adventurer+-+280-u" parent="." unique_id=1768341333 instance=ExtResource("3_qi2p4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=263424742]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7, 0)
+transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0.7, 0)
 shape = SubResource("CapsuleShape3D_3a8dq")
 
 [node name="Visuals" type="Node3D" parent="." unique_id=1859737741]
