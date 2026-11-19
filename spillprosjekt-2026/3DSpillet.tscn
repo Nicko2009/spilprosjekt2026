@@ -10,7 +10,6 @@
 [ext_resource type="PackedScene" uid="uid://bsm85tcytcykw" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Sidewalk_Planter.gltf" id="8_jcvmf"]
 [ext_resource type="PackedScene" uid="uid://ddwd8n6cj2au8" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Sidewalk_Corner_Round_3m.gltf" id="9_g7ir1"]
 [ext_resource type="PackedScene" uid="uid://bf0mgfrjpr2vj" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Street_2Lane_noSidewalk.gltf" id="10_q6jbf"]
-[ext_resource type="PackedScene" uid="uid://bc2pqnylquhgi" path="res://Stortinget modell v2-7.glb" id="13_cc7hj"]
 [ext_resource type="PackedScene" uid="uid://busmdwf425m6e" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Brick_InteriorWall_1.gltf" id="14_7fevm"]
 [ext_resource type="PackedScene" uid="uid://beogksr18ij0y" path="res://stylizedGrassMeshes/grass.glb" id="16_i38at"]
 [ext_resource type="Texture2D" uid="uid://dq3a4n8326jnu" path="res://grass_Wild_Grass_1_Default_1_grass_green_Color.jpg" id="16_mo71q"]
@@ -205,9 +204,6 @@ transform = Transform3D(7.1589117, 0, 0, 0, 1, 0, 0, 0, 1, 148.29063, 0.23859596
 [node name="Street_2Lane_noSidewalk6" parent="." unique_id=573534527 instance=ExtResource("10_q6jbf")]
 transform = Transform3D(-0.15018086, -0.013467642, -0.8633865, -0.0020227656, 0.9999092, -0.0116288345, 10.919044, -4.285262e-12, -0.0118772, 167.04701, 0.32480955, 57.892128)
 
-[node name="Tinkercad GLTF Scene2" parent="." unique_id=191943676 instance=ExtResource("13_cc7hj")]
-transform = Transform3D(-0.48998445, 0, 0.003266167, 0, 1, 0, -0.003903471, 0, -0.409987, -59.83117, 6.7086754, 93.395935)
-
 [node name="Brick_InteriorWall_12" parent="." unique_id=2004322552 instance=ExtResource("14_7fevm")]
 transform = Transform3D(-0.18957265, 0, -1.2892861, 0, 18.068419, 0, 15.11666, 0, -0.016168479, 4.1211414, -1.3351545, 96.06367)
 
@@ -316,6 +312,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 133.047, 7.18581, 69.948944)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.001358)
 
 [node name="Floor_4x45" parent="Floor_4x45" unique_id=1154455206 instance=ExtResource("19_tu3g1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.9987411)
+
+[node name="Floor_4x46" parent="." unique_id=712202693 instance=ExtResource("19_tu3g1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.636995, 133.047, 7.18581, 79.74478)
+
+[node name="Floor_4x46" parent="Floor_4x46" unique_id=812961670 instance=ExtResource("19_tu3g1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.001358)
+
+[node name="Floor_4x45" parent="Floor_4x46" unique_id=430665409 instance=ExtResource("19_tu3g1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.9987411)
 
 [node name="Floor_2x22" parent="." unique_id=1010597102 instance=ExtResource("20_jcvmf")]
