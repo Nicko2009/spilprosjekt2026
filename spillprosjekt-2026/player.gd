@@ -21,6 +21,9 @@ var camera_pitch: float = 0.0
 
 func _ready():
 	add_to_group("player")
+	
+	global_position = get_parent().get_node("Marker3D").global_position
+	
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	$Head/Camera3D/SubViewportContainer/SubViewport.size = DisplayServer.window_get_size()
 

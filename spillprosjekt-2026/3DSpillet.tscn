@@ -22,6 +22,10 @@
 [ext_resource type="PackedScene" uid="uid://dbb463a1wen56" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Door_1.gltf" id="21_g7ir1"]
 [ext_resource type="PackedScene" uid="uid://m75jdxfnjauk" path="res://Utsiden Stortinget v1 1.glb" id="21_jcvmf"]
 [ext_resource type="Script" uid="uid://xqfi7m0mbqy2" path="res://area_3d.gd" id="21_q6jbf"]
+[ext_resource type="PackedScene" uid="uid://b3ff4t4tep2kr" path="res://player.tscn" id="21_q7fu7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_q6jbf"]
+size = Vector3(9.323212, 1, 9.836914)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i38at"]
 albedo_texture = ExtResource("16_mo71q")
@@ -271,12 +275,18 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_oucjv")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jcvmf"]
-size = Vector3(0.92407227, 3.2584229, 0.001)
+size = Vector3(2.6573486, 5.956238, 0.001)
 
 [node name="3DSPILLET" type="Node3D" unique_id=622863024]
 
 [node name="Street_Asphalt_9x92" parent="." unique_id=989730967 instance=ExtResource("1_jc3t6")]
 transform = Transform3D(22.063036, 0, 0, 0, 1, 0, 0, 0, 22.063036, 198.19318, 0.21135044, 197.63678)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Street_Asphalt_9x92" unique_id=406212304]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Street_Asphalt_9x92/StaticBody3D" unique_id=1907841325]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.494995, -0.098947525, -4.4618635)
+shape = SubResource("BoxShape3D_q6jbf")
 
 [node name="Building_Large_22" parent="." unique_id=1650884813 instance=ExtResource("2_nf54e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.95391, 0.08076286, 15.262259)
@@ -905,6 +915,11 @@ transform = Transform3D(4.0410886, 0, 0.04839342, 0, 4.041379, 0, -0.04839342, 0
 [node name="Metal_FirstFloor_Wall3" parent="." unique_id=379391634 instance=ExtResource("17_i38at")]
 transform = Transform3D(-1.6006496, 0, -0.015553597, 0, 1.099569, 0, 0.025756866, 0, -0.96657205, 100.53313, 12.424015, 58.757507)
 
+[node name="player" parent="." unique_id=1947800497 instance=ExtResource("21_q7fu7")]
+
+[node name="Marker3D" type="Marker3D" parent="." unique_id=1616632885]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100.408, 5, 14.551)
+
 [node name="Door_12" parent="." unique_id=179769033 instance=ExtResource("21_g7ir1")]
 transform = Transform3D(1.3982949, 0, 0, 0, 2.7250848, 0, 0, 0, 0.99999994, 101.80716, 8.062531, 58.386696)
 
@@ -912,11 +927,12 @@ transform = Transform3D(1.3982949, 0, 0, 0, 2.7250848, 0, 0, 0, 0.99999994, 101.
 transform = Transform3D(0.99584067, 0, 0, 0, 1.0002946, 0, 0, 0, 0.99999994, -0.9972992, -0.007174015, 0)
 
 [node name="Area3D" type="Area3D" parent="Door_12" unique_id=945797733]
-transform = Transform3D(5.471961, 0, 0, 0, 3.408308, 0, 0, 0, 1.2365935, 0.086997986, 0.10575628, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.086997986, 0.10575628, 0)
 script = ExtResource("21_q6jbf")
+teleport_position = Vector3(10, 1, 10)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Door_12/Area3D" unique_id=2051373155]
-transform = Transform3D(0.78448457, 0, 0, 0, 0.35395062, 0, 0, 0, 1.0000001, -0.3639927, 0.6257731, -0.2432785)
+transform = Transform3D(0.78448457, 0, 0, 0, 0.35395062, 0, 0, 0, 1, -1.0438538, 1.0570838, -0.2432785)
 shape = SubResource("BoxShape3D_jcvmf")
 
 [connection signal="body_entered" from="Door_12/Area3D" to="Door_12/Area3D" method="_on_body_entered"]
