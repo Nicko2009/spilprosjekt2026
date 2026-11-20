@@ -104,12 +104,15 @@ func shoot():
 	if projectile_scene == null:
 		print("Ingen kule er valgt!")
 		return
-		
+
 	var projectile = projectile_scene.instantiate()
 	get_tree().current_scene.add_child(projectile)
-		
-	var start_position = head.global_position + (-head.global_transform.basis.z * 1.5)
-	var direction = -head.global_transform.basis.z
-		
+
+	var camera = head.get_node("Camera3D")
+	var direction = -camera.global_transform.basis.z
+	print("Skuddretning: ", direction)
+
+	var start_position = camera.global_position + direction * 1.5
+
 	projectile.global_position = start_position
 	projectile.setup(direction, self)

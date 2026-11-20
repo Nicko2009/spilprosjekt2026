@@ -20,10 +20,10 @@ script = ExtResource("1_7k104")
 projectile_scene = ExtResource("2_4gyqm")
 
 [node name="Blake+v3+-+The+Adventurer+-+280-u" parent="." unique_id=1768341333 instance=ExtResource("3_qi2p4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, -0.1, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=263424742]
-transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0.7, 0)
+transform = Transform3D(0.84000003, 0, 0, 0, 0.84000003, 0, 0, 0, 0.84000003, 0, 0.7, 0)
 shape = SubResource("CapsuleShape3D_3a8dq")
 
 [node name="Visuals" type="Node3D" parent="." unique_id=1859737741]
