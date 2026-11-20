@@ -281,9 +281,16 @@ shadow_mesh = SubResource("ArrayMesh_oucjv")
 size = Vector3(2.6573486, 5.956238, 0.001)
 
 [sub_resource type="Environment" id="Environment_ya23r"]
+background_mode = 1
+background_color = Color(0.78218913, 0.9482394, 0.99631363, 1)
+background_energy_multiplier = 0.8
+sky_custom_fov = 36.0
 ambient_light_source = 2
-ambient_light_color = Color(0.8475774, 0.8277531, 0.82362235, 1)
+ambient_light_color = Color(0.67759925, 0.644048, 0.63734686, 1)
+ambient_light_energy = 1.66
 reflected_light_source = 2
+tonemap_exposure = 1.64
+ssr_enabled = true
 
 [node name="3DSPILLET" type="Node3D" unique_id=622863024]
 
@@ -951,7 +958,7 @@ shape = SubResource("BoxShape3D_jcvmf")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=88297739]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 65.60113, 5025.8315, -1260.1738)
-light_energy = 2.0
+light_color = Color(0.728822, 0.728822, 0.728822, 1)
 shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1345130391]
