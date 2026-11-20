@@ -21,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://crfyndmwvouqe" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Brick_Window_CurvedDouble.gltf" id="20_tu3g1"]
 [ext_resource type="PackedScene" uid="uid://dbb463a1wen56" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Door_1.gltf" id="21_g7ir1"]
 [ext_resource type="PackedScene" uid="uid://m75jdxfnjauk" path="res://Utsiden Stortinget v1 1.glb" id="21_jcvmf"]
+[ext_resource type="Script" uid="uid://xqfi7m0mbqy2" path="res://area_3d.gd" id="21_q6jbf"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i38at"]
 albedo_texture = ExtResource("16_mo71q")
@@ -268,6 +269,9 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_oucjv")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jcvmf"]
+size = Vector3(0.92407227, 3.2584229, 0.001)
 
 [node name="3DSPILLET" type="Node3D" unique_id=622863024]
 
@@ -898,11 +902,21 @@ transform = Transform3D(0.9845655, 0, -0.17501464, 0, 0.9999997, 0, 0.17501464, 
 [node name="Brick_Window_Trim15" parent="." unique_id=164394443 instance=ExtResource("18_erwfq")]
 transform = Transform3D(4.0410886, 0, 0.04839342, 0, 4.041379, 0, -0.04839342, 0, 4.0410886, 100.40347, 18.567104, 59.806828)
 
+[node name="Metal_FirstFloor_Wall3" parent="." unique_id=379391634 instance=ExtResource("17_i38at")]
+transform = Transform3D(-1.6006496, 0, -0.015553597, 0, 1.099569, 0, 0.025756866, 0, -0.96657205, 100.53313, 12.424015, 58.757507)
+
 [node name="Door_12" parent="." unique_id=179769033 instance=ExtResource("21_g7ir1")]
-transform = Transform3D(1.3528559, 0, 0, 0, 2.725085, 0, 0, 0, 1, 101.803154, 8.0625305, 58.377014)
+transform = Transform3D(1.3982949, 0, 0, 0, 2.7250848, 0, 0, 0, 0.99999994, 101.80716, 8.062531, 58.386696)
 
 [node name="Door_13" parent="Door_12" unique_id=77853706 instance=ExtResource("21_g7ir1")]
 transform = Transform3D(0.99584067, 0, 0, 0, 1.0002946, 0, 0, 0, 0.99999994, -0.9972992, -0.007174015, 0)
 
-[node name="Metal_FirstFloor_Wall3" parent="." unique_id=379391634 instance=ExtResource("17_i38at")]
-transform = Transform3D(-1.6006496, 0, -0.015553597, 0, 1.099569, 0, 0.025756866, 0, -0.96657205, 100.53313, 12.424015, 58.757507)
+[node name="Area3D" type="Area3D" parent="Door_12" unique_id=945797733]
+transform = Transform3D(5.471961, 0, 0, 0, 3.408308, 0, 0, 0, 1.2365935, 0.086997986, 0.10575628, 0)
+script = ExtResource("21_q6jbf")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Door_12/Area3D" unique_id=2051373155]
+transform = Transform3D(0.78448457, 0, 0, 0, 0.35395062, 0, 0, 0, 1.0000001, -0.3639927, 0.6257731, -0.2432785)
+shape = SubResource("BoxShape3D_jcvmf")
+
+[connection signal="body_entered" from="Door_12/Area3D" to="Door_12/Area3D" method="_on_body_entered"]
