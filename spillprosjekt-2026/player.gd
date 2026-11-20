@@ -22,7 +22,7 @@ var camera_pitch: float = 0.0
 func _ready():
 	add_to_group("player")
 	
-	global_position = get_parent().get_node("Marker3D").global_position
+	global_position = get_parent().get_node("Marker3D").global_position 
 	
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	$Head/Camera3D/SubViewportContainer/SubViewport.size = DisplayServer.window_get_size()
@@ -119,3 +119,8 @@ func shoot():
 
 	projectile.global_position = start_position
 	projectile.setup(direction, self)
+	
+func die():
+	print("Player er død!")
+	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+	get_tree().paused = true
