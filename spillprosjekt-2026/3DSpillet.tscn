@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://busmdwf425m6e" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Brick_InteriorWall_1.gltf" id="14_7fevm"]
 [ext_resource type="PackedScene" uid="uid://beogksr18ij0y" path="res://stylizedGrassMeshes/grass.glb" id="16_i38at"]
 [ext_resource type="Texture2D" uid="uid://dq3a4n8326jnu" path="res://grass_Wild_Grass_1_Default_1_grass_green_Color.jpg" id="16_mo71q"]
+[ext_resource type="Script" uid="uid://b7nupg237ufxp" path="res://static_body_3d.gd" id="16_q7fu7"]
 [ext_resource type="PackedScene" uid="uid://ccm38aj8anblg" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Metal_FirstFloor_Wall.gltf" id="17_i38at"]
 [ext_resource type="PackedScene" uid="uid://c7tmggk14a4ak" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Brick_Window_Trim.gltf" id="18_erwfq"]
 [ext_resource type="PackedScene" uid="uid://cfrvuwdat04lc" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Floor_4x4.gltf" id="19_tu3g1"]
@@ -31,6 +32,8 @@ size = Vector3(9.323212, 1, 9.836914)
 albedo_texture = ExtResource("16_mo71q")
 
 [sub_resource type="BoxMesh" id="BoxMesh_rgbhm"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_q6jbf"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iidmu"]
 resource_name = "Unimog1300L_C"
@@ -752,8 +755,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.1014688, 0, 0, -4.07695)
 [node name="Floor_2x23" parent="Floor_4x43/Floor_2x25" unique_id=468025111 instance=ExtResource("20_jcvmf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.9803276)
 
-[node name="Tinkercad GLTF Scene" parent="." unique_id=1516851819 instance=ExtResource("21_jcvmf")]
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=950968096]
 transform = Transform3D(-0.4825118, 0, -0.0012239881, 0, 0.4825134, 0, 0.0012239881, 0, -0.4825118, 96.887596, 0.071985245, 97.56655)
+script = ExtResource("16_q7fu7")
+
+[node name="Tinkercad GLTF Scene" parent="StaticBody3D" unique_id=1516851819 instance=ExtResource("21_jcvmf")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=899549645]
+shape = SubResource("ConcavePolygonShape3D_q6jbf")
 
 [node name="Metal_FirstFloor_Wall2" parent="." unique_id=2115887701 instance=ExtResource("17_i38at")]
 transform = Transform3D(-45.09984, 0, 0.003893852, 0, 5.0531616, 0, -0.045403436, 0, -3.867815, 101.039764, 4.4513655, 83.0636)
