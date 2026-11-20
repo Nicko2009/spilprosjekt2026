@@ -280,6 +280,18 @@ shadow_mesh = SubResource("ArrayMesh_oucjv")
 [sub_resource type="BoxShape3D" id="BoxShape3D_jcvmf"]
 size = Vector3(2.6573486, 5.956238, 0.001)
 
+[sub_resource type="Environment" id="Environment_ya23r"]
+background_mode = 1
+background_color = Color(0.78218913, 0.9482394, 0.99631363, 1)
+background_energy_multiplier = 0.8
+sky_custom_fov = 36.0
+ambient_light_source = 2
+ambient_light_color = Color(0.67759925, 0.644048, 0.63734686, 1)
+ambient_light_energy = 1.66
+reflected_light_source = 2
+tonemap_exposure = 1.64
+ssr_enabled = true
+
 [node name="3DSPILLET" type="Node3D" unique_id=622863024]
 
 [node name="Street_Asphalt_9x92" parent="." unique_id=989730967 instance=ExtResource("1_jc3t6")]
@@ -943,5 +955,13 @@ teleport_position = Vector3(10, 1, 10)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Door_12/Area3D" unique_id=2051373155]
 transform = Transform3D(0.78448457, 0, 0, 0, 0.35395062, 0, 0, 0, 1, -1.0438538, 1.0570838, -0.2432785)
 shape = SubResource("BoxShape3D_jcvmf")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=88297739]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 65.60113, 5025.8315, -1260.1738)
+light_color = Color(0.728822, 0.728822, 0.728822, 1)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1345130391]
+environment = SubResource("Environment_ya23r")
 
 [connection signal="body_entered" from="Door_12/Area3D" to="Door_12/Area3D" method="_on_body_entered"]
