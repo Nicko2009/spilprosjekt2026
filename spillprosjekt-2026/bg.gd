@@ -1,6 +1,8 @@
 extends ParallaxBackground
 
-var speed = 100 
+
+var speed = 100
+
 
 
 func _process(delta: float) -> void:
