@@ -1093,6 +1093,18 @@ transform = Transform3D(4.0410886, 0, 0.04839342, 0, 4.041379, 0, -0.04839342, 0
 [node name="Metal_FirstFloor_Wall3" parent="." unique_id=379391634 instance=ExtResource("17_i38at")]
 transform = Transform3D(-1.6006496, 0, -0.015553597, 0, 1.099569, 0, 0.025756866, 0, -0.96657205, 100.53313, 12.424015, 58.757507)
 
+[node name="Door_32" parent="." unique_id=1050902119 instance=ExtResource("25_x5eqr")]
+transform = Transform3D(1.9939284, 0, 0, 0, 1.7747796, 0, 0, 0, 1, 101.42102, 19.589888, 111.54)
+
+[node name="Door_33" parent="Door_32" unique_id=1662365455 instance=ExtResource("25_x5eqr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5748634, 0.0137348175, -0.03643036)
+
+[node name="Door_35" parent="Door_32" unique_id=1645294011 instance=ExtResource("25_x5eqr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.61784, 0, 0)
+
+[node name="Door_34" parent="." unique_id=289161447 instance=ExtResource("25_x5eqr")]
+transform = Transform3D(39.84662, 0.018979115, -0.0025860965, 0.19437298, -0.056940824, 0.53261673, 0.10841919, -6.873184, -0.004419569, 120.35958, 31.094748, 107.111694)
+
 [node name="player" parent="." unique_id=1947800497 instance=ExtResource("21_q7fu7")]
 
 [node name="Marker3D" type="Marker3D" parent="." unique_id=1616632885]
@@ -1120,17 +1132,5 @@ shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1345130391]
 environment = SubResource("Environment_ya23r")
-
-[node name="Door_32" parent="." unique_id=1050902119 instance=ExtResource("25_x5eqr")]
-transform = Transform3D(1.9939284, 0, 0, 0, 1.7747796, 0, 0, 0, 1, 101.42102, 19.589888, 111.54)
-
-[node name="Door_33" parent="Door_32" unique_id=1662365455 instance=ExtResource("25_x5eqr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5748634, 0.0137348175, -0.03643036)
-
-[node name="Door_35" parent="Door_32" unique_id=1645294011 instance=ExtResource("25_x5eqr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.61784, 0, 0)
-
-[node name="Door_34" parent="." unique_id=289161447 instance=ExtResource("25_x5eqr")]
-transform = Transform3D(39.84662, 0.018979115, -0.0025860965, 0.19437298, -0.056940824, 0.53261673, 0.10841919, -6.873184, -0.004419569, 120.35958, 31.094748, 107.111694)
 
 [connection signal="body_entered" from="Door_12/Area3D" to="Door_12/Area3D" method="_on_body_entered"]
