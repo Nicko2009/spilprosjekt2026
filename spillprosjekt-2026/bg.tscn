@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bk2exks1qw1je" path="res://Clouds 7/1.png" id="1_t4gw0"]
 [ext_resource type="Texture2D" uid="uid://bvumil6sun8bg" path="res://Clouds 7/2.png" id="2_tuaf8"]
 [ext_resource type="Texture2D" uid="uid://cjss4mskl362f" path="res://Clouds 7/3.png" id="3_e8j8q"]
+[ext_resource type="Texture2D" uid="uid://b3qjkr08vxt6" path="res://stortinget.png" id="3_plmvg"]
 [ext_resource type="Texture2D" uid="uid://t31g8726847a" path="res://Clouds 7/4.png" id="4_iq1of"]
 
 [node name="BG" type="ParallaxBackground" unique_id=403795751]
@@ -17,6 +18,11 @@ motion_mirroring = Vector2(1149.18, 0)
 position = Vector2(576.49994, 323.99997)
 scale = Vector2(1.9982637, 1.9938269)
 texture = ExtResource("1_t4gw0")
+
+[node name="Stortinget" type="Sprite2D" parent="." unique_id=1922931417]
+position = Vector2(584, 501.99997)
+scale = Vector2(0.40304396, 0.40304396)
+texture = ExtResource("3_plmvg")
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="." unique_id=429681758]
 motion_scale = Vector2(0.5, 1)
