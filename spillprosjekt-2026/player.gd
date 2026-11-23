@@ -98,7 +98,7 @@ func _physics_process(delta):
 func take_damage(amount: int):
 	health -= amount
 	health = max(health, 0)
-	print("Player har", health, "liv igjen")
+
 
 	if health <= 0:
 		print("Player er ute av spillet")
@@ -113,13 +113,14 @@ func shoot():
 
 	var camera = head.get_node("Camera3D")
 	var direction = -camera.global_transform.basis.z
-	print("Skuddretning: ", direction)
+	
 
 	var start_position = camera.global_position + direction * 1.5
 
 	projectile.global_position = start_position
 	projectile.setup(direction, self)
 	
+	$ShootSound.play()
 func die():
 	print("Player er død!")
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE

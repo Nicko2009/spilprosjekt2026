@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bk10h8kj0ynv7"
+path="res://.godot/imported/freesound_community-201110-distant-sirens-urban-night-quiet-roof-11pm-49901.mp3-9318566241d0df9b9ef05930ab235609.mp3str"
+
+[deps]
+
+source_file="res://assets/Endelig mappe/Lydeffekter/ute/freesound_community-201110-distant-sirens-urban-night-quiet-roof-11pm-49901.mp3"
+dest_files=["res://.godot/imported/freesound_community-201110-distant-sirens-urban-night-quiet-roof-11pm-49901.mp3-9318566241d0df9b9ef05930ab235609.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

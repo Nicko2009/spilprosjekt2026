@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bmeocd35n5b75"
+path="res://.godot/imported/eaglaxle-gun-shot-3-530790.mp3-37fa5e4a3a700e419a77f58591646a54.mp3str"
+
+[deps]
+
+source_file="res://assets/Endelig mappe/Lydeffekter/Gunshot (NPC)/eaglaxle-gun-shot-3-530790.mp3"
+dest_files=["res://.godot/imported/eaglaxle-gun-shot-3-530790.mp3-37fa5e4a3a700e419a77f58591646a54.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

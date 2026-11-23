@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c5osdg1nqd02s"
+path="res://.godot/imported/atlasaudio-tension-trailer-613494.mp3-bcd8b1393212421c9cb94cdfd7220b55.mp3str"
+
+[deps]
+
+source_file="res://assets/Endelig mappe/Musikk/Før \"Play\"/atlasaudio-tension-trailer-613494.mp3"
+dest_files=["res://.godot/imported/atlasaudio-tension-trailer-613494.mp3-bcd8b1393212421c9cb94cdfd7220b55.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

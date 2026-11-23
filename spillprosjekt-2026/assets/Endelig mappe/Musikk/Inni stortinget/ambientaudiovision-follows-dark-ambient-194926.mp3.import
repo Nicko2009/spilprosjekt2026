@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c2squ24gnrqgk"
+path="res://.godot/imported/ambientaudiovision-follows-dark-ambient-194926.mp3-dd9c00d589f286dc1027870dce040d3a.mp3str"
+
+[deps]
+
+source_file="res://assets/Endelig mappe/Musikk/Inni stortinget/ambientaudiovision-follows-dark-ambient-194926.mp3"
+dest_files=["res://.godot/imported/ambientaudiovision-follows-dark-ambient-194926.mp3-dd9c00d589f286dc1027870dce040d3a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

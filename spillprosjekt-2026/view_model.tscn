@@ -799,7 +799,7 @@ shadow_mesh = SubResource("ArrayMesh_m8mh2")
 shading_mode = 0
 
 [node name="view_model_camera" type="Camera3D" unique_id=1241792198]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0023258924)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.002319336)
 fov = 35.0
 
 [node name="fps_rig" type="Node3D" parent="." unique_id=869252624]

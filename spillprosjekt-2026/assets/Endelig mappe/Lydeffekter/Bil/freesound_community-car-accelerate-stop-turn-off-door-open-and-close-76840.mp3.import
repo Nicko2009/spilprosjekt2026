@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://7s1ecavd046o"
+path="res://.godot/imported/freesound_community-car-accelerate-stop-turn-off-door-open-and-close-76840.mp3-4e6122bc0d2f3f54c367df9f2c594078.mp3str"
+
+[deps]
+
+source_file="res://assets/Endelig mappe/Lydeffekter/Bil/freesound_community-car-accelerate-stop-turn-off-door-open-and-close-76840.mp3"
+dest_files=["res://.godot/imported/freesound_community-car-accelerate-stop-turn-off-door-open-and-close-76840.mp3-4e6122bc0d2f3f54c367df9f2c594078.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

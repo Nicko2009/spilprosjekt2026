@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://rwoa08i072ug" path="res://player.gd" id="1_4flbx"]
 [ext_resource type="PackedScene" uid="uid://bwo0yh1dibric" path="res://energy_ball.tscn" id="2_onrkg"]
 [ext_resource type="PackedScene" uid="uid://bdtu127abflfa" path="res://view_model.tscn" id="3_i3pqv"]
+[ext_resource type="AudioStream" uid="uid://cwxuj177lylbv" path="res://assets/Endelig mappe/Lydeffekter/Gunshot (Deg)/universfield-gunshot-352466.mp3" id="4_hqtel"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_22ivu"]
 radius = 0.35
@@ -37,3 +38,6 @@ render_target_update_mode = 4
 
 [node name="view_model_camera" parent="Head/Camera3D/SubViewportContainer/SubViewport" unique_id=1241792198 instance=ExtResource("3_i3pqv")]
 cull_mask = 1047554
+
+[node name="ShootSound" type="AudioStreamPlayer" parent="." unique_id=1724357999]
+stream = ExtResource("4_hqtel")
