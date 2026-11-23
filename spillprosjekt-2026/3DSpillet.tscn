@@ -783,6 +783,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.818512, 0.022994995, 51.0
 [node name="Floor_4x43" parent="Floor_4x43/Floor_4x64" unique_id=633186945 instance=ExtResource("19_tu3g1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9918976, 0, 0)
 
+[node name="Floor_4x67" parent="Floor_4x43" unique_id=729491709 instance=ExtResource("19_tu3g1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.0803938, -11.388794, 0.022994995, 55.097866)
+
+[node name="Floor_4x43" parent="Floor_4x43/Floor_4x67" unique_id=1810778037 instance=ExtResource("19_tu3g1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9918976, 0, 0)
+
+[node name="Floor_4x44" parent="Floor_4x43/Floor_4x67" unique_id=80838638 instance=ExtResource("19_tu3g1")]
+transform = Transform3D(0.8292642, 0, 0, 0, 0.7199857, 0, 0, 0, 1, -7.6015244, 0, 0.8977814)
+
+[node name="Floor_4x68" parent="Floor_4x43" unique_id=1997685399 instance=ExtResource("19_tu3g1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.0803938, -22.53257, 0.022994995, 55.2327)
+
+[node name="Floor_4x43" parent="Floor_4x43/Floor_4x68" unique_id=1195949096 instance=ExtResource("19_tu3g1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9918976, 0, 0)
+
 [node name="Floor_4x49" parent="Floor_4x43" unique_id=1115094464 instance=ExtResource("19_tu3g1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.87590027, 0.03145027, 15.880871)
 
@@ -1117,8 +1132,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.61784, 0, 0)
 
 [node name="Door_34" parent="." unique_id=289161447 instance=ExtResource("25_x5eqr")]
 transform = Transform3D(39.84662, 0.018979115, -0.0025860965, 0.19437298, -0.056940824, 0.53261673, 0.10841919, -6.873184, -0.004419569, 120.35958, 31.094748, 107.111694)
-
-[node name="Door_13" parent="." unique_id=1269195141 instance=ExtResource("21_g7ir1")]
-transform = Transform3D(1.6682792, 0, 0, 0, 1.8086993, 0, 0, 0, 1, 134.52417, 19.636711, 111.60327)
 
 [connection signal="body_entered" from="Door_12/Area3D" to="Door_12/Area3D" method="_on_body_entered"]
