@@ -4,14 +4,14 @@
 [ext_resource type="PackedScene" uid="uid://chy8b6vcuetnm" path="res://assets/gun textures/Gun bullet.glb" id="2_emgei"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_awtud"]
-size = Vector3(0.6591797, 0.81565857, 0.30477905)
+size = Vector3(0.6591797, 0.82042694, 0.30477905)
 
 [node name="EnergyBall" type="Area3D" unique_id=1270596362]
 script = ExtResource("1_2hwwp")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=876197877]
-transform = Transform3D(0.13918635, 0, 0, 0, -2.5538537e-08, -0.31088415, 0, 0.5842536, -1.3589178e-08, 0.0385703, 0.17071491, 0.3082626)
+transform = Transform3D(0.13918635, 0, 0, 0, -2.5538537e-08, -0.31088415, 0, 0.5842536, -1.3589178e-08, 0.025691792, 0.17071491, -0.14762788)
 shape = SubResource("BoxShape3D_awtud")
 
 [node name="Gun bullet" parent="." unique_id=288349802 instance=ExtResource("2_emgei")]
-transform = Transform3D(0.43948138, 0, 0, 0, -1.921034e-08, -0.4394814, 0, 0.43948135, -1.9210342e-08, 0.02, 0.16, 0.08483846)
+transform = Transform3D(0.43948138, 0, 0, 0, -1.921034e-08, 0.4394814, 0, -0.43948135, -1.9210342e-08, 0.02, 0.16, 0.08483846)
