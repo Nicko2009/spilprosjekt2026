@@ -24,6 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://m75jdxfnjauk" path="res://Utsiden Stortinget v1 1.glb" id="21_jcvmf"]
 [ext_resource type="Script" uid="uid://xqfi7m0mbqy2" path="res://area_3d.gd" id="21_q6jbf"]
 [ext_resource type="PackedScene" uid="uid://b3ff4t4tep2kr" path="res://player.tscn" id="21_q7fu7"]
+[ext_resource type="PackedScene" uid="uid://b51briq2kwlad" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Door_3.gltf" id="25_x5eqr"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_q6jbf"]
 size = Vector3(9.323212, 1, 9.836914)
@@ -713,6 +714,36 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.92575073, 0.022994995, 31.
 [node name="Floor_4x43" parent="Floor_4x43/Floor_4x55" unique_id=1952046023 instance=ExtResource("19_tu3g1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9918976, 0, 0)
 
+[node name="Floor_4x60" parent="Floor_4x43" unique_id=2000889922 instance=ExtResource("19_tu3g1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.92575073, 0.022994995, 35.750935)
+
+[node name="Floor_4x43" parent="Floor_4x43/Floor_4x60" unique_id=105739126 instance=ExtResource("19_tu3g1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9918976, 0, 0)
+
+[node name="Floor_4x59" parent="Floor_4x43" unique_id=1171364172 instance=ExtResource("19_tu3g1")]
+transform = Transform3D(0.00063951407, 0, 0.9999998, 0, 1, 0, -0.9999998, 0, 0.00063951407, -8.882599, 0.022994995, 31.454044)
+
+[node name="Floor_4x43" parent="Floor_4x43/Floor_4x59" unique_id=1345548450 instance=ExtResource("19_tu3g1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9918976, 0, 0)
+
+[node name="Floor_4x56" parent="Floor_4x43" unique_id=1317609003 instance=ExtResource("19_tu3g1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.813416, 0.022994995, 27.316189)
+
+[node name="Floor_4x43" parent="Floor_4x43/Floor_4x56" unique_id=420054882 instance=ExtResource("19_tu3g1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9918976, 0, 0)
+
+[node name="Floor_4x57" parent="Floor_4x43" unique_id=835487817 instance=ExtResource("19_tu3g1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.813416, 0.022994995, 31.213345)
+
+[node name="Floor_4x43" parent="Floor_4x43/Floor_4x57" unique_id=1060858297 instance=ExtResource("19_tu3g1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9918976, 0, 0)
+
+[node name="Floor_4x58" parent="Floor_4x43" unique_id=217727177 instance=ExtResource("19_tu3g1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.813416, 0.022994995, 35.21429)
+
+[node name="Floor_4x43" parent="Floor_4x43/Floor_4x58" unique_id=1541200013 instance=ExtResource("19_tu3g1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9918976, 0, 0)
+
 [node name="Floor_4x49" parent="Floor_4x43" unique_id=1115094464 instance=ExtResource("19_tu3g1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.87590027, 0.03145027, 15.880871)
 
@@ -950,7 +981,7 @@ transform = Transform3D(0.99584067, 0, 0, 0, 1.0002946, 0, 0, 0, 0.99999994, -0.
 [node name="Area3D" type="Area3D" parent="Door_12" unique_id=945797733]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.086997986, 0.10575628, 0)
 script = ExtResource("21_q6jbf")
-teleport_position = Vector3(10, 1, 10)
+teleport_position = Vector3(101.421, 19.766, 109.194)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Door_12/Area3D" unique_id=2051373155]
 transform = Transform3D(0.78448457, 0, 0, 0, 0.35395062, 0, 0, 0, 1, -1.0438538, 1.0570838, -0.2432785)
@@ -963,5 +994,14 @@ shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1345130391]
 environment = SubResource("Environment_ya23r")
+
+[node name="Door_32" parent="." unique_id=1050902119 instance=ExtResource("25_x5eqr")]
+transform = Transform3D(1.9939284, 0, 0, 0, 1.7747796, 0, 0, 0, 1, 101.42102, 19.589888, 111.54)
+
+[node name="Door_33" parent="." unique_id=1662365455 instance=ExtResource("25_x5eqr")]
+transform = Transform3D(1.9939284, 0, 0, 0, 1.7747796, 0, 0, 0, 1, 110.54298, 19.614264, 111.50357)
+
+[node name="Door_34" parent="." unique_id=289161447 instance=ExtResource("25_x5eqr")]
+transform = Transform3D(39.84662, 0.018979115, -0.0025860965, 0.19437298, -0.056940824, 0.53261673, 0.10841919, -6.873184, -0.004419569, 120.35958, 31.094748, 107.111694)
 
 [connection signal="body_entered" from="Door_12/Area3D" to="Door_12/Area3D" method="_on_body_entered"]
