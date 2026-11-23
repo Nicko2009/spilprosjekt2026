@@ -8,20 +8,28 @@ script = ExtResource("1_lti8b")
 
 [node name="Play" type="Button" parent="." unique_id=1301686418]
 offset_left = 353.0
-offset_top = 130.0
+offset_top = 51.0
 offset_right = 809.0
-offset_bottom = 291.0
+offset_bottom = 212.0
 theme_override_font_sizes/font_size = 60
 text = "Play"
 
 [node name="Quit" type="Button" parent="." unique_id=706971748]
 offset_left = 355.0
-offset_top = 348.0
+offset_top = 447.0
 offset_right = 811.0
-offset_bottom = 509.0
+offset_bottom = 608.0
 theme_override_font_sizes/font_size = 60
 text = "Quit
 "
+
+[node name="Tutorial" type="Button" parent="." unique_id=1649411413]
+offset_left = 352.0
+offset_top = 249.0
+offset_right = 813.0
+offset_bottom = 407.0
+theme_override_font_sizes/font_size = 60
+text = "Tutorial"
 
 [node name="BG" parent="." unique_id=403795751 instance=ExtResource("2_ouk20")]
 
