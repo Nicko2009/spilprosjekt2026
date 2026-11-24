@@ -33,6 +33,8 @@ text = "Tutorial"
 
 [node name="BG" parent="." unique_id=403795751 instance=ExtResource("2_ouk20")]
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1515094558]
+
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="Tutorial" to="." method="_on_tutorial_pressed"]
