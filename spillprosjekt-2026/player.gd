@@ -11,6 +11,7 @@ var health: int = 100
 @export var mouse_sensitivity: float = 0.002
 
 @onready var head: Node3D = $Head
+@onready var health_bar: ProgressBar = $CanvasLayer/Control/HealthBar
 @onready var camera = $Head/Camera3D
 
 var gravity: float = ProjectSettings.get_setting(
@@ -22,10 +23,12 @@ var camera_pitch: float = 0.0
 func _ready():
 	add_to_group("player")
 	
-	global_position = get_parent().get_node("Marker3D").global_position
-	
+	$FootstepTimer.timeout.connect(_on_footstep_timer_timeout)
+	"""global_position = get_parent().get_node("Marker3D").global_position """
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	$Head/Camera3D/SubViewportContainer/SubViewport.size = DisplayServer.window_get_size()
+	health_bar.max_value = max_health
+	health_bar.value = health
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
@@ -62,15 +65,12 @@ func _unhandled_input(event):
 func _physics_process(delta):
 	$Head/Camera3D/SubViewportContainer/SubViewport/view_model_camera.global_transform = camera.global_transform
 	
-	# Gravity
 	if not is_on_floor():
 		velocity.y -= gravity * delta
 
-	# Jump
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = jump_velocity
 
-	# Movement
 	var input_dir = Input.get_vector(
 		"move_left",
 		"move_right",
@@ -94,14 +94,23 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, walk_speed)
 		velocity.z = move_toward(velocity.z, 0, walk_speed)
 	move_and_slide()
+	
+	if is_on_floor() and Vector2(velocity.x, velocity.z).length() > 0.2:
+		if $FootstepTimer.is_stopped():
+			$FootstepTimer.start()
+	else:
+		$FootstepTimer.stop()
 
 func take_damage(amount: int):
 	health -= amount
 	health = max(health, 0)
 
+	health_bar.value = health
+	print("Player har", health, "HP igjen")
 
 	if health <= 0:
 		print("Player er ute av spillet")
+		die()
 		
 func shoot():
 	if projectile_scene == null:
@@ -125,3 +134,7 @@ func die():
 	print("Player er død!")
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	get_tree().paused = true
+
+func _on_footstep_timer_timeout():
+	print("Fottrinn!")
+	$FootstepSound.play()

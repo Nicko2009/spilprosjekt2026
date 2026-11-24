@@ -7,7 +7,6 @@ var health: int = 100
 @export var projectile_scene: PackedScene
 @export var detection_range: float = 20.0
 
-# Bevegelse
 @export var move_speed: float = 3.0
 @export var move_range: float = 2.0
 
@@ -50,7 +49,6 @@ func change_direction():
 
 func _physics_process(delta):
 
-	# Tilfeldig bevegelse
 	move_timer -= delta
 
 	if move_timer <= 0:
@@ -61,7 +59,6 @@ func _physics_process(delta):
 		global_position.z - start_position.z
 	).length()
 
-	# Hold fienden innenfor en liten sirkel
 	if distance_from_start >= move_range:
 		var return_direction = Vector3(
 			start_position.x - global_position.x,
@@ -76,7 +73,6 @@ func _physics_process(delta):
 
 	move_and_slide()
 
-	# Finn spilleren
 	if player == null:
 		var players = get_tree().get_nodes_in_group("player")
 
@@ -90,7 +86,6 @@ func _physics_process(delta):
 		player.global_position
 	)
 
-	# Se mot spilleren
 	if distance <= detection_range:
 		look_at(
 			Vector3(
@@ -120,6 +115,8 @@ func _on_shoot_timer_timeout():
 	var direction = (target_position - bullet_start).normalized()
 
 	projectile.setup(direction, self)
+	
+	$NpcShoot.play()
 
 
 func take_damage(amount: int):
