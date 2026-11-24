@@ -25,6 +25,7 @@ func _ready():
 
 	randomize()
 
+	print("Enemy posisjon i _ready: ", global_position)
 	start_position = global_position
 	change_direction()
 
@@ -130,5 +131,9 @@ func take_damage(amount: int):
 	print("Enemy har", health, "liv igjen")
 
 	if health <= 0:
-		print("Enemy er beseiret")
+		var manager = get_tree().get_first_node_in_group("game_manager")
+
+		if manager:
+			manager.enemy_defeated()
+
 		queue_free()
