@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://1v6h4rllwklv"]
 
 [ext_resource type="Script" uid="uid://sf0pulrhgkkt" path="res://totorial.gd" id="1_4jkgq"]
+[ext_resource type="Texture2D" uid="uid://dp4ldpc876paj" path="res://totorial new2.jpg" id="2_4jkgq"]
 
 [node name="Totorial" type="Node2D" unique_id=756492299]
 script = ExtResource("1_4jkgq")
@@ -12,5 +13,10 @@ offset_right = 891.0
 offset_bottom = 630.0
 theme_override_font_sizes/font_size = 40
 text = "Back"
+
+[node name="TotorialNew2" type="Sprite2D" parent="." unique_id=1844068174]
+position = Vector2(570, 327)
+scale = Vector2(0.94027776, 0.94027776)
+texture = ExtResource("2_4jkgq")
 
 [connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
