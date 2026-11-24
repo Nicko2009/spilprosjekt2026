@@ -1,21 +1,23 @@
 [gd_scene format=3 uid="uid://1v6h4rllwklv"]
 
-[ext_resource type="Texture2D" uid="uid://pfv7u1qjdoda" path="res://totorial.jpg" id="1_2iii7"]
 [ext_resource type="Script" uid="uid://sf0pulrhgkkt" path="res://totorial.gd" id="1_4jkgq"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2iii7"]
+load_path = "res://.godot/imported/totorial new2.jpg-94f6506522f2df98e2b180b61fbd6162.ctex"
 
 [node name="Totorial" type="Node2D" unique_id=756492299]
 script = ExtResource("1_4jkgq")
 
-[node name="Totorial" type="Sprite2D" parent="." unique_id=2011972894]
-position = Vector2(578, 321.5)
-scale = Vector2(0.8541667, 0.84505206)
-texture = ExtResource("1_2iii7")
+[node name="TotorialNew2" type="Sprite2D" parent="." unique_id=1437364934]
+position = Vector2(576.5, 326.5)
+scale = Vector2(0.9242187, 0.93194443)
+texture = SubResource("CompressedTexture2D_2iii7")
 
 [node name="Back" type="Button" parent="." unique_id=1475011166]
-offset_left = 859.0
-offset_top = 527.0
-offset_right = 1123.0
-offset_bottom = 618.0
+offset_left = 627.0
+offset_top = 539.0
+offset_right = 891.0
+offset_bottom = 630.0
 theme_override_font_sizes/font_size = 40
 text = "Back"
 
