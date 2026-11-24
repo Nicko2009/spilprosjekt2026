@@ -10,7 +10,7 @@
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.86435485, 0, -4.832359)
 
 [node name="Enemy" parent="." unique_id=1405487520 instance=ExtResource("2_ppyta")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4276223, -1.6833719, 1.8002052)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4276223, -1.416587, 1.8002052)
 up_direction = Vector3(0, 0.19611613, -0.9805807)
 
 [node name="player" parent="." unique_id=1947800497 instance=ExtResource("2_6uqi0")]

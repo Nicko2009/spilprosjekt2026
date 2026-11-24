@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://chse0txkkaydr" path="res://enemy.gd" id="1_7k104"]
 [ext_resource type="PackedScene" uid="uid://bwo0yh1dibric" path="res://energy_ball.tscn" id="2_4gyqm"]
 [ext_resource type="PackedScene" uid="uid://brhpanycb57e2" path="res://assets/gun textures/Blake+v3+-+The+Adventurer+-+280-u.glb" id="3_qi2p4"]
+[ext_resource type="AudioStream" uid="uid://cwxuj177lylbv" path="res://assets/Endelig mappe/Lydeffekter/Gunshot (Deg)/universfield-gunshot-352466.mp3" id="4_iifgy"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3a8dq"]
 radius = 0.36279297
@@ -40,3 +41,6 @@ mesh = SubResource("SphereMesh_22ivu")
 [node name="shoot" type="Timer" parent="." unique_id=2076060275]
 wait_time = 2.0
 autostart = true
+
+[node name="NpcShoot" type="AudioStreamPlayer" parent="." unique_id=673946226]
+stream = ExtResource("4_iifgy")
