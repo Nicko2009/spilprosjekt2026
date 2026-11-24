@@ -108,12 +108,15 @@ func _on_shoot_timer_timeout():
 	var projectile = projectile_scene.instantiate()
 	get_tree().current_scene.add_child(projectile)
 
-	var bullet_start = global_position + Vector3(0, 1, 0)
+	var bullet_start = global_position + Vector3(0, 0.5, 0)
 	projectile.global_position = bullet_start
 
 	var target_position = player.global_position + Vector3(0, 1, 0)
 	var direction = (target_position - bullet_start).normalized()
-
+	
+	direction.y = 0
+	direction = direction.normalized()
+	
 	projectile.setup(direction, self)
 	
 	$NpcShoot.play()
