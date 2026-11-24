@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://b1w0bn415id67"]
 
+[ext_resource type="Script" uid="uid://c4mokw3fipjn" path="res://3d_spillet.gd" id="1_cc7hj"]
 [ext_resource type="PackedScene" uid="uid://bkbvj3v2aflva" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Street_Asphalt_9x9.gltf" id="1_jc3t6"]
 [ext_resource type="PackedScene" uid="uid://cc6viktttxxst" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Building_Large_2.gltf" id="2_nf54e"]
 [ext_resource type="PackedScene" uid="uid://d1ukqqlh5dy0v" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Building_Medium_2_001.gltf" id="3_mo71q"]
@@ -294,6 +295,7 @@ tonemap_exposure = 1.64
 ssr_enabled = true
 
 [node name="3DSPILLET" type="Node3D" unique_id=622863024]
+script = ExtResource("1_cc7hj")
 
 [node name="Street_Asphalt_9x92" parent="." unique_id=989730967 instance=ExtResource("1_jc3t6")]
 transform = Transform3D(22.063036, 0, 0, 0, 1, 0, 0, 0, 22.063036, 198.19318, 0.21135044, 197.63678)
