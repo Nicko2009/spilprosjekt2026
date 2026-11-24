@@ -11,3 +11,6 @@ func _on_play_pressed() -> void:
 
 func _on_tutorial_pressed() -> void:
 	get_tree().change_scene_to_file("res://totorial.tscn")
+
+func _ready():
+	MusicPlayer.play_music(preload("res://assets/Endelig mappe/Musikk/Før \"Play\"/atlasaudio-tension-trailer-613494.mp3"))
