@@ -35,6 +35,9 @@ albedo_texture = ExtResource("16_mo71q")
 
 [sub_resource type="BoxMesh" id="BoxMesh_rgbhm"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cc7hj"]
+albedo_color = Color(0.627451, 0.5411765, 0.42745098, 1)
+
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_q6jbf"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iidmu"]
@@ -932,6 +935,9 @@ script = ExtResource("16_q7fu7")
 
 [node name="Tinkercad GLTF Scene" parent="StaticBody3D" unique_id=1516851819 instance=ExtResource("21_jcvmf")]
 
+[node name="Mesh_Mesh_head_geo_001_lambert2SG_001" parent="StaticBody3D/Tinkercad GLTF Scene/Node" parent_id_path=PackedInt32Array(1516851819, 1809419312) index="0" unique_id=1683881990]
+surface_material_override/0 = SubResource("StandardMaterial3D_cc7hj")
+
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=899549645]
 shape = SubResource("ConcavePolygonShape3D_q6jbf")
 
@@ -1136,9 +1142,26 @@ shape = SubResource("BoxShape3D_jcvmf")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=88297739]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 65.60113, 5025.8315, -1260.1738)
 light_color = Color(0.728822, 0.728822, 0.728822, 1)
+light_energy = 1.381
+light_indirect_energy = 1.889
+light_volumetric_fog_energy = 1.127
+light_angular_distance = 28.57
+light_specular = 0.238
 shadow_enabled = true
+shadow_bias = 0.0
+shadow_normal_bias = 10.0
+shadow_transmittance_bias = -7.442
+shadow_blur = 0.167
+directional_shadow_split_1 = 0.402
+directional_shadow_split_2 = 0.327
+directional_shadow_split_3 = 0.496
+directional_shadow_fade_start = 1.0
+directional_shadow_max_distance = 93.1
+directional_shadow_pancake_size = 0.0
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1345130391]
 environment = SubResource("Environment_ya23r")
 
 [connection signal="body_entered" from="Door_12/Area3D" to="Door_12/Area3D" method="_on_body_entered"]
+
+[editable path="StaticBody3D/Tinkercad GLTF Scene"]
