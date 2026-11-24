@@ -287,15 +287,17 @@ size = Vector3(2.6573486, 5.956238, 0.001)
 
 [sub_resource type="Environment" id="Environment_ya23r"]
 background_mode = 1
-background_color = Color(0.78218913, 0.9482394, 0.99631363, 1)
-background_energy_multiplier = 0.8
-sky_custom_fov = 36.0
+background_color = Color(0.5983893, 0.92310244, 0.9928563, 1)
+background_energy_multiplier = 0.93
+sky_custom_fov = 27.9
 ambient_light_source = 2
-ambient_light_color = Color(0.67759925, 0.644048, 0.63734686, 1)
-ambient_light_energy = 1.66
+ambient_light_color = Color(0.67938083, 0.64184, 0.6454902, 1)
+ambient_light_energy = 1.99
 reflected_light_source = 2
-tonemap_exposure = 1.64
+tonemap_exposure = 1.46
 ssr_enabled = true
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.0213
 
 [node name="3DSPILLET" type="Node3D" unique_id=622863024]
 script = ExtResource("1_cc7hj")
