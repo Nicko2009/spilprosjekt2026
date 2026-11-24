@@ -26,6 +26,8 @@
 [ext_resource type="Script" uid="uid://xqfi7m0mbqy2" path="res://area_3d.gd" id="21_q6jbf"]
 [ext_resource type="PackedScene" uid="uid://b3ff4t4tep2kr" path="res://player.tscn" id="21_q7fu7"]
 [ext_resource type="PackedScene" uid="uid://b51briq2kwlad" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Door_3.gltf" id="25_x5eqr"]
+[ext_resource type="PackedScene" uid="uid://c3drmfnorjceh" path="res://Wooden/Large/Wood_Road_Block_Large.fbx" id="27_7fevm"]
+[ext_resource type="PackedScene" uid="uid://doq2udvd0qx3s" path="res://Streetlights/Streetlights_001.fbx" id="28_sau3n"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_q6jbf"]
 size = Vector3(9.323212, 1, 9.836914)
@@ -1121,6 +1123,9 @@ transform = Transform3D(1.8547506, 0, 0, 0, 2.510888, 0, 0, 0, 1, 134.56824, 18.
 [node name="Door_14" parent="." unique_id=179769033 instance=ExtResource("21_g7ir1")]
 transform = Transform3D(0.006428262, 0, -1.0025179, 0, 1.8466926, 0, 1.8571646, 0, 0.003470047, 115.57606, 19.594986, 119.34337)
 
+[node name="Wood_Road_Block_Large" parent="." unique_id=2076937903 instance=ExtResource("27_7fevm")]
+transform = Transform3D(1.477055, 0, 0, 0, 0.8229296, 0, 0, 0, 1, 163.35938, -2.2075057, 62.654198)
+
 [node name="player" parent="." unique_id=1947800497 instance=ExtResource("21_q7fu7")]
 
 [node name="Marker3D" type="Marker3D" parent="." unique_id=1616632885]
@@ -1163,6 +1168,15 @@ directional_shadow_pancake_size = 0.0
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1345130391]
 environment = SubResource("Environment_ya23r")
+
+[node name="Wood_Road_Block_Large2" parent="." unique_id=441907553 instance=ExtResource("27_7fevm")]
+transform = Transform3D(1.402088, 0, 0, 0, 1, 0, 0, 0, 1, 35.31368, -3.1426048, 74.37175)
+
+[node name="Streetlights_001" parent="." unique_id=1033634922 instance=ExtResource("28_sau3n")]
+transform = Transform3D(0.3143649, 0, 0.32049027, 0, 0.19889465, 0, -0.35378078, 0, 0.28478342, 107.67299, 1.6123991, 18.793648)
+
+[node name="Streetlights_002" parent="." unique_id=1781001975 instance=ExtResource("28_sau3n")]
+transform = Transform3D(0.2545073, 0, -0.3614671, 0, 0.19889465, 0, 0.39901397, 0, 0.23055835, 93.00155, 1.6123991, 22.977364)
 
 [connection signal="body_entered" from="Door_12/Area3D" to="Door_12/Area3D" method="_on_body_entered"]
 
