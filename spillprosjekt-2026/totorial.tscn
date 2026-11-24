@@ -15,7 +15,7 @@ theme_override_font_sizes/font_size = 40
 text = "Back"
 
 [node name="TotorialNew2" type="Sprite2D" parent="." unique_id=1844068174]
-position = Vector2(570, 327)
+position = Vector2(568, 311)
 scale = Vector2(0.94027776, 0.94027776)
 texture = ExtResource("2_4jkgq")
 
