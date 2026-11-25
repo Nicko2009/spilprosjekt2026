@@ -28,6 +28,8 @@
 [ext_resource type="Script" uid="uid://ffowuit88h7x" path="res://game_manager.gd" id="25_7fevm"]
 [ext_resource type="PackedScene" uid="uid://b51briq2kwlad" path="res://Downtown City MegaKit[Standard]/Exports/glTF (Godot)/Door_3.gltf" id="25_x5eqr"]
 [ext_resource type="PackedScene" uid="uid://bsblcx8sxmhvq" path="res://enemy.tscn" id="26_sau3n"]
+[ext_resource type="PackedScene" uid="uid://c3drmfnorjceh" path="res://Wooden/Large/Wood_Road_Block_Large.fbx" id="27_7fevm"]
+[ext_resource type="PackedScene" uid="uid://doq2udvd0qx3s" path="res://Streetlights/Streetlights_001.fbx" id="28_sau3n"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_q6jbf"]
 size = Vector3(9.323212, 1, 9.836914)
@@ -289,15 +291,17 @@ size = Vector3(2.6573486, 5.956238, 0.001)
 
 [sub_resource type="Environment" id="Environment_ya23r"]
 background_mode = 1
-background_color = Color(0.78218913, 0.9482394, 0.99631363, 1)
-background_energy_multiplier = 0.8
-sky_custom_fov = 36.0
+background_color = Color(0.5983893, 0.92310244, 0.9928563, 1)
+background_energy_multiplier = 0.93
+sky_custom_fov = 27.9
 ambient_light_source = 2
-ambient_light_color = Color(0.67759925, 0.644048, 0.63734686, 1)
-ambient_light_energy = 1.66
+ambient_light_color = Color(0.67938083, 0.64184, 0.6454902, 1)
+ambient_light_energy = 1.99
 reflected_light_source = 2
-tonemap_exposure = 1.64
+tonemap_exposure = 1.46
 ssr_enabled = true
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.0213
 
 [node name="3DSPILLET" type="Node3D" unique_id=622863024]
 script = ExtResource("1_cc7hj")
@@ -1161,6 +1165,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.356308, 0, 0)
 [node name="EnemyCounter" type="Label" parent="GameManager/CanvasLayer" unique_id=1024086977]
 offset_right = 40.0
 offset_bottom = 23.0
+[node name="Wood_Road_Block_Large" parent="." unique_id=2076937903 instance=ExtResource("27_7fevm")]
+transform = Transform3D(1.477055, 0, 0, 0, 0.8229296, 0, 0, 0, 1, 163.35938, -2.2075057, 62.654198)
 
 [node name="player" parent="." unique_id=1947800497 instance=ExtResource("21_q7fu7")]
 
@@ -1204,6 +1210,15 @@ directional_shadow_pancake_size = 0.0
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1345130391]
 environment = SubResource("Environment_ya23r")
+
+[node name="Wood_Road_Block_Large2" parent="." unique_id=441907553 instance=ExtResource("27_7fevm")]
+transform = Transform3D(1.402088, 0, 0, 0, 1, 0, 0, 0, 1, 35.31368, -3.1426048, 74.37175)
+
+[node name="Streetlights_001" parent="." unique_id=1033634922 instance=ExtResource("28_sau3n")]
+transform = Transform3D(0.3143649, 0, 0.32049027, 0, 0.19889465, 0, -0.35378078, 0, 0.28478342, 107.67299, 1.6123991, 18.793648)
+
+[node name="Streetlights_002" parent="." unique_id=1781001975 instance=ExtResource("28_sau3n")]
+transform = Transform3D(0.2545073, 0, -0.3614671, 0, 0.19889465, 0, 0.39901397, 0, 0.23055835, 93.00155, 1.6123991, 22.977364)
 
 [connection signal="body_entered" from="Door_12/Area3D" to="Door_12/Area3D" method="_on_body_entered"]
 

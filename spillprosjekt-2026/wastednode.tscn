@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://d1i4keo5e8p07"]
+
+[ext_resource type="Texture2D" uid="uid://dk3y1pcjxliva" path="res://wastedgodot.jpg" id="1_07ktb"]
+[ext_resource type="Script" uid="uid://dua8rudi1famm" path="res://wastednode.gd" id="1_hbd83"]
+
+[node name="Wastednode" type="Node2D" unique_id=1253242585]
+script = ExtResource("1_hbd83")
+
+[node name="Wastedgodot" type="Sprite2D" parent="." unique_id=279921019]
+position = Vector2(578.2222, 330.5)
+scale = Vector2(0.93472224, 0.93472224)
+texture = ExtResource("1_07ktb")
+
+[node name="Play again" type="Button" parent="." unique_id=2014127304]
+offset_left = 401.0
+offset_top = 565.0
+offset_right = 769.0
+offset_bottom = 642.0
+theme_override_colors/font_color = Color(0.76679987, 0.20372874, 0.23484546, 1)
+theme_override_font_sizes/font_size = 40
+text = "Play again
+"
+
+[connection signal="pressed" from="Play again" to="." method="_on_play_again_pressed"]
