@@ -8,7 +8,7 @@ var health: int = 100
 @export var walk_speed: float = 5.0
 @export var sprint_speed: float = 8.0
 @export var jump_velocity: float = 4.5
-@export var mouse_sensitivity: float = 0.002
+@export var mouse_sensitivity: float = 0.001
 
 @onready var head: Node3D = $Head
 @onready var health_bar: ProgressBar = $CanvasLayer/Control/HealthBar

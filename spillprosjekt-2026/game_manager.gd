@@ -9,17 +9,9 @@ var remaining_enemies = 10
 func _ready():
 	add_to_group("game_manager")
 
-	print("GameManager startet!")
-
 	enemy_counter.text = "Enemies left: 10"
 
 	var spawn_points = $EnemySpawns.get_children()
-	
-	for point in spawn_points:
-		print(point.name, " lokal: ", point.position)
-		print(point.name, " global: ", point.global_position)
-
-	print("Antall spawn-punkter: ", spawn_points.size())
 	
 
 	for i in range(min(total_enemies, spawn_points.size())):
@@ -29,7 +21,6 @@ func _ready():
 		
 func enemy_defeated():
 	remaining_enemies -= 1
-	print("Enemies igjen: ", remaining_enemies)
 	enemy_counter.text = "Enemies left: " + str(remaining_enemies)
 
 	if remaining_enemies <= 0:
