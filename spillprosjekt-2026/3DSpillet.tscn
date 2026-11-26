@@ -803,12 +803,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9918976, 0, 0)
 [node name="Floor_4x44" parent="Floor_4x43/Floor_4x67" unique_id=80838638 instance=ExtResource("19_tu3g1")]
 transform = Transform3D(0.8292642, 0, 0, 0, 0.7199857, 0, 0, 0, 1, -7.6015244, 0, 0.8977814)
 
-[node name="Floor_4x68" parent="Floor_4x43" unique_id=1997685399 instance=ExtResource("19_tu3g1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.0803938, -22.53257, 0.022994995, 55.2327)
-
-[node name="Floor_4x43" parent="Floor_4x43/Floor_4x68" unique_id=1195949096 instance=ExtResource("19_tu3g1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9918976, 0, 0)
-
 [node name="Floor_4x49" parent="Floor_4x43" unique_id=1115094464 instance=ExtResource("19_tu3g1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.87590027, 0.03145027, 15.880871)
 
@@ -941,7 +935,7 @@ script = ExtResource("16_q7fu7")
 
 [node name="Tinkercad GLTF Scene" parent="StaticBody3D" unique_id=1516851819 instance=ExtResource("21_jcvmf")]
 
-[node name="Mesh_Mesh_head_geo_001_lambert2SG_001" parent="StaticBody3D/Tinkercad GLTF Scene/Node" parent_id_path=PackedInt32Array(1516851819, 1467049943) index="0" unique_id=903021699]
+[node name="Mesh_Mesh_head_geo_001_lambert2SG_001" parent="StaticBody3D/Tinkercad GLTF Scene/Node" parent_id_path=PackedInt32Array(1516851819, 1809419312) index="0" unique_id=1683881990]
 surface_material_override/0 = SubResource("StandardMaterial3D_cc7hj")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=899549645]
@@ -1133,38 +1127,41 @@ enemy_scene = ExtResource("26_sau3n")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 82.74972, 0, 21.768368)
 
 [node name="Marker1" type="Marker3D" parent="GameManager/EnemySpawns" unique_id=927223421]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.493, 0, 31.624)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0214462, 19.665148, 73.163315)
 
 [node name="Marker2" type="Marker3D" parent="GameManager/EnemySpawns" unique_id=540399146]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 4)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.58422, 19.676899, 65.084656)
 
 [node name="Marker3" type="Marker3D" parent="GameManager/EnemySpawns" unique_id=1850576405]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.153587, 19.686586, 77.21709)
 
 [node name="Marker4" type="Marker3D" parent="GameManager/EnemySpawns" unique_id=859343047]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.37703, 19.721415, 53.399242)
 
 [node name="Marker5" type="Marker3D" parent="GameManager/EnemySpawns" unique_id=1249335033]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.296, 0, 2.671)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.449516, 19.66342, 84.02721)
 
 [node name="Marker6" type="Marker3D" parent="GameManager/EnemySpawns" unique_id=1350684986]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8458023, 19.713373, 53.36501)
 
 [node name="Marker7" type="Marker3D" parent="GameManager/EnemySpawns" unique_id=908636334]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.326332, 19.71632, 60.199986)
 
 [node name="Marker8" type="Marker3D" parent="GameManager/EnemySpawns" unique_id=163177699]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.184792, 0, 6.626072)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.703606, 19.690245, 43.98994)
 
 [node name="Marker9" type="Marker3D" parent="GameManager/EnemySpawns" unique_id=250717958]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.2215652, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.269417, 19.713438, 61.15328)
 
 [node name="Marker10" type="Marker3D" parent="GameManager/EnemySpawns" unique_id=1908739318]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.356308, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.310158, 19.681807, 75.01103)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="GameManager" unique_id=1233253927]
 
 [node name="EnemyCounter" type="Label" parent="GameManager/CanvasLayer" unique_id=1024086977]
 offset_right = 40.0
 offset_bottom = 23.0
+
 [node name="Wood_Road_Block_Large" parent="." unique_id=2076937903 instance=ExtResource("27_7fevm")]
 transform = Transform3D(1.477055, 0, 0, 0, 0.8229296, 0, 0, 0, 1, 163.35938, -2.2075057, 62.654198)
 
@@ -1219,6 +1216,27 @@ transform = Transform3D(0.3143649, 0, 0.32049027, 0, 0.19889465, 0, -0.35378078,
 
 [node name="Streetlights_002" parent="." unique_id=1781001975 instance=ExtResource("28_sau3n")]
 transform = Transform3D(0.2545073, 0, -0.3614671, 0, 0.19889465, 0, 0.39901397, 0, 0.23055835, 93.00155, 1.6123991, 22.977364)
+
+[node name="Floor_4x45" parent="." unique_id=705224467 instance=ExtResource("19_tu3g1")]
+transform = Transform3D(14.119636, 0, 0, 0, 1, 0, 0, 0, 4.831444, 93.0684, 19.66862, 101.563835)
+
+[node name="Door_15" parent="." unique_id=1856637207 instance=ExtResource("21_g7ir1")]
+transform = Transform3D(1.6979074, 0, 0, 0, 1.9406611, 0, 0, 0, 1, 67.79251, 19.43439, 111.26798)
+
+[node name="Door_16" parent="." unique_id=1975780237 instance=ExtResource("21_g7ir1")]
+transform = Transform3D(0.006106715, 0, -0.9999936, 0, 1.9406611, 0, 1.6978964, 0, 0.003596612, 65.13726, 19.43439, 110.00235)
+
+[node name="Floor_4x46" parent="." unique_id=2111408441 instance=ExtResource("19_tu3g1")]
+transform = Transform3D(2.270107, 0, 0, 0, 1, 0, 0, 0, 17.581947, 60.91558, 19.695278, 85.58043)
+
+[node name="Floor_4x47" parent="." unique_id=738070261 instance=ExtResource("19_tu3g1")]
+transform = Transform3D(3.8425353, 0, 0, 0, 1.0688471, 0, 0, 0, 3.1801038, 73.1044, 19.706947, 85.684555)
+
+[node name="Floor_4x48" parent="." unique_id=2122791146 instance=ExtResource("19_tu3g1")]
+transform = Transform3D(11.530299, 0, 0, 0, 1, 0, 0, 0, 3.511037, 101.92256, 19.66512, 85.86171)
+
+[node name="Floor_4x49" parent="." unique_id=487052609 instance=ExtResource("19_tu3g1")]
+transform = Transform3D(4.010318, 0, 0, 0, 1, 0, 0, 0, 1.9457735, 101.04817, 19.668076, 75.17123)
 
 [connection signal="body_entered" from="Door_12/Area3D" to="Door_12/Area3D" method="_on_body_entered"]
 

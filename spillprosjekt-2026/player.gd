@@ -23,6 +23,8 @@ var camera_pitch: float = 0.0
 func _ready():
 	add_to_group("player")
 	
+	"""global_position = get_parent().get_node("Marker3D").global_position """
+	
 	$FootstepTimer.timeout.connect(_on_footstep_timer_timeout)
 	global_position = get_parent().get_node("Marker3D").global_position
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
