@@ -935,7 +935,7 @@ script = ExtResource("16_q7fu7")
 
 [node name="Tinkercad GLTF Scene" parent="StaticBody3D" unique_id=1516851819 instance=ExtResource("21_jcvmf")]
 
-[node name="Mesh_Mesh_head_geo_001_lambert2SG_001" parent="StaticBody3D/Tinkercad GLTF Scene/Node" parent_id_path=PackedInt32Array(1516851819, 1467049943) index="0" unique_id=903021699]
+[node name="Mesh_Mesh_head_geo_001_lambert2SG_001" parent="StaticBody3D/Tinkercad GLTF Scene/Node" parent_id_path=PackedInt32Array(1516851819, 1809419312) index="0" unique_id=1683881990]
 surface_material_override/0 = SubResource("StandardMaterial3D_cc7hj")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=899549645]
@@ -1170,6 +1170,7 @@ transform = Transform3D(-0.9515732, 0, -0.30742225, 0, 1, 0, 0.30742225, 0, -0.9
 
 [node name="Marker3D" type="Marker3D" parent="." unique_id=1616632885]
 transform = Transform3D(0.22694574, 0, -0.9739074, 0, 1, 0, 0.9739074, 0, 0.22694574, 102.19932, 9.372922, 39.09613)
+transform = Transform3D(0.99568456, 0, -0.092802316, 0, 1, 0, 0.092802316, 0, 0.99568456, 100.408, 5, 14.551)
 
 [node name="Door_12" parent="." unique_id=611545605 instance=ExtResource("21_g7ir1")]
 transform = Transform3D(1.3982949, 0, 0, 0, 2.7250848, 0, 0, 0, 0.99999994, 101.80716, 8.062531, 58.386696)
