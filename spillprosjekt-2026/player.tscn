@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bwo0yh1dibric" path="res://energy_ball.tscn" id="2_onrkg"]
 [ext_resource type="PackedScene" uid="uid://bdtu127abflfa" path="res://view_model.tscn" id="3_i3pqv"]
 [ext_resource type="AudioStream" uid="uid://cwxuj177lylbv" path="res://assets/Endelig mappe/Lydeffekter/Gunshot (Deg)/universfield-gunshot-352466.mp3" id="4_hqtel"]
+[ext_resource type="AudioStream" uid="uid://crccgvoje8aek" path="res://assets/Endelig mappe/Lydeffekter/Bevegelse/yarzur_ofc-st1-footstep-sfx-323053.mp3" id="5_sweqy"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_22ivu"]
 radius = 0.35
@@ -13,6 +14,23 @@ height = 1.8
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 script = ExtResource("1_4flbx")
 projectile_scene = ExtResource("2_onrkg")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1779150492]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=796034021]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HealthBar" type="ProgressBar" parent="CanvasLayer/Control" unique_id=145799487]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 30.0
+offset_right = 280.0
+offset_bottom = 55.0
+value = 100.0
+show_percentage = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1487505399]
 shape = SubResource("CapsuleShape3D_22ivu")
@@ -41,3 +59,9 @@ cull_mask = 1047554
 
 [node name="ShootSound" type="AudioStreamPlayer" parent="." unique_id=1724357999]
 stream = ExtResource("4_hqtel")
+
+[node name="FootstepSound" type="AudioStreamPlayer" parent="." unique_id=843621811]
+stream = ExtResource("5_sweqy")
+
+[node name="FootstepTimer" type="Timer" parent="." unique_id=1589956429]
+wait_time = 0.3

@@ -19,19 +19,16 @@ func _physics_process(delta):
 
 func _on_body_entered(body):
 	if shooter == null:
-		print("Kulen traff:", body.name, "Grupper:", body.get_groups())
 		return
 		
 	if shooter.is_in_group("player"):
 		if body.is_in_group("enemy"):
 			if body.has_method("take_damage"):
 				body.take_damage(20)
-				print("Enemy ble truffet!")
 				queue_free()
 	
 	elif shooter.is_in_group("enemy"):
 		if body.is_in_group("player"):
 			body.take_damage(20)
-			print("player ble truffet")
 			queue_free()
 		

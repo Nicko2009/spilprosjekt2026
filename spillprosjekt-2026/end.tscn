@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bv0sg2p5hrshb"]
+
+[ext_resource type="Texture2D" uid="uid://cd5cwwwx8ktt8" path="res://end.png" id="1_n735c"]
+[ext_resource type="Script" uid="uid://b4lyi44lftlfh" path="res://play_again.gd" id="2_egc6y"]
+
+[node name="Endnode" type="Node2D" unique_id=1355760944]
+
+[node name="End" type="Sprite2D" parent="." unique_id=1784508109]
+position = Vector2(573.5484, 327.62503)
+scale = Vector2(0.70642936, 0.70642936)
+texture = ExtResource("1_n735c")
+
+[node name="Play again" type="Button" parent="." unique_id=1974724147]
+offset_left = 346.0
+offset_top = 555.0
+offset_right = 796.0
+offset_bottom = 639.0
+theme_override_colors/font_color = Color(0.60187066, 0.4250987, 0.37573504, 1)
+theme_override_font_sizes/font_size = 40
+text = "Play again"
+script = ExtResource("2_egc6y")
+
+[connection signal="pressed" from="Play again" to="Play again" method="_on_pressed"]
