@@ -108,10 +108,9 @@ func take_damage(amount: int):
 	health = max(health, 0)
 
 	health_bar.value = health
-	print("Player har", health, "HP igjen")
+	
 
 	if health <= 0:
-		print("Player er ute av spillet")
 		die()
 		
 func shoot():
@@ -133,10 +132,8 @@ func shoot():
 	
 	$ShootSound.play()
 func die():
-	print("Player er død!")
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	get_tree().paused = true
 
 func _on_footstep_timer_timeout():
-	print("Fottrinn!")
 	$FootstepSound.play()
