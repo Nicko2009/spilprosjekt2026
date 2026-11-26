@@ -24,4 +24,5 @@ func enemy_defeated():
 	enemy_counter.text = "Enemies left: " + str(remaining_enemies)
 
 	if remaining_enemies <= 0:
-		print("Alle enemies er beseiret!")
+		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+		get_tree().change_scene_to_file("res://end.tscn")
