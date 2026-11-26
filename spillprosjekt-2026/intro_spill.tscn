@@ -20,4 +20,13 @@ scale = Vector2(0.6209204, 0.63454115)
 stream = ExtResource("1_7rdvx")
 autoplay = true
 
+[node name="Button" type="Button" parent="." unique_id=2022319056]
+offset_left = 862.0
+offset_top = 548.0
+offset_right = 1105.0
+offset_bottom = 620.0
+theme_override_font_sizes/font_size = 40
+text = "Skip"
+
 [connection signal="finished" from="VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
