@@ -2,7 +2,7 @@
 extends CharacterBody3D
 
 @export var max_health: int = 100
-var health: int = 100
+var health: int = 50
 
 @export var projectile_scene: PackedScene
 @export var detection_range: float = 20.0
