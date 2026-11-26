@@ -131,6 +131,8 @@ func take_damage(amount: int):
 		var manager = get_tree().get_first_node_in_group("game_manager")
 
 		if manager:
-			manager.enemy_defeated()
-
-		queue_free()
+			manager.enemy_defeated()		
+		
+	var fade = create_tween()
+	fade.tween_property(self, "scale", Vector3.ZERO, 0.4)
+	fade.tween_callback(queue_free)
