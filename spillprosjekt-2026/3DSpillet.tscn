@@ -1142,7 +1142,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.37703, 19.721415, 53.39924
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.449516, 19.66342, 84.02721)
 
 [node name="Marker6" type="Marker3D" parent="GameManager/EnemySpawns" unique_id=1350684986]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8458023, 19.713373, 53.36501)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.28392, 19.713373, 61.96903)
 
 [node name="Marker7" type="Marker3D" parent="GameManager/EnemySpawns" unique_id=908636334]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.326332, 19.71632, 60.199986)
@@ -1166,9 +1166,10 @@ offset_bottom = 23.0
 transform = Transform3D(1.477055, 0, 0, 0, 0.8229296, 0, 0, 0, 1, 163.35938, -2.2075057, 62.654198)
 
 [node name="player" parent="." unique_id=1947800497 instance=ExtResource("21_q7fu7")]
+transform = Transform3D(-0.9515732, 0, -0.30742225, 0, 1, 0, 0.30742225, 0, -0.9515732, 0, 1, 0)
 
 [node name="Marker3D" type="Marker3D" parent="." unique_id=1616632885]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100.408, 5, 14.551)
+transform = Transform3D(0.22694574, 0, -0.9739074, 0, 1, 0, 0.9739074, 0, 0.22694574, 102.19932, 9.372922, 39.09613)
 
 [node name="Door_12" parent="." unique_id=611545605 instance=ExtResource("21_g7ir1")]
 transform = Transform3D(1.3982949, 0, 0, 0, 2.7250848, 0, 0, 0, 0.99999994, 101.80716, 8.062531, 58.386696)

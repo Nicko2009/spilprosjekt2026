@@ -803,8 +803,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.002319336)
 fov = 35.0
 
 [node name="fps_rig" type="Node3D" parent="." unique_id=869252624]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.019518256, -0.0050068498, 0.107256114)
 
 [node name="shotgun" type="Node3D" parent="fps_rig" unique_id=2107407304]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07452375, -0.2493518)
 
 [node name="Shotgun_model" type="Node3D" parent="fps_rig/shotgun" unique_id=822497051]
 transform = Transform3D(-0.0038521588, 0, 0.9999927, 0, 1, 0, -0.9999927, 0, -0.0038521588, 0.13250905, -0.29785907, -0.6431505)
@@ -842,7 +844,7 @@ material_override = ExtResource("1_1jg7g")
 mesh = SubResource("ArrayMesh_grr4h")
 
 [node name="left_hand" type="Node3D" parent="fps_rig/shotgun" unique_id=577245478]
-transform = Transform3D(-0.052330345, -0.038784802, 0, 0.03878473, -0.05233025, 0.0001232031, -7.336024e-05, 9.898122e-05, 0.06513609, 0.114464626, -0.20158336, -0.7546133)
+transform = Transform3D(-0.052330345, -0.038784802, 0, 0.03878473, -0.05233025, 0.0001232031, -7.336024e-05, 9.898122e-05, 0.06513609, 0.114464626, -0.205181, -0.7546133)
 
 [node name="hand" type="MeshInstance3D" parent="fps_rig/shotgun/left_hand" unique_id=1146330785]
 transform = Transform3D(0.99259394, -0.0012572464, -0.121472254, 0.020850623, 0.98687047, 0.16016154, 0.11967602, -0.1615082, 0.97958803, -0.24055314, -0.12257707, 0.92143345)
@@ -930,7 +932,7 @@ mesh = SubResource("ArrayMesh_k7142")
 surface_material_override/0 = ExtResource("2_hgbsr")
 
 [node name="thumb_0" type="MeshInstance3D" parent="fps_rig/shotgun/left_hand/hand" unique_id=662471834]
-transform = Transform3D(0.53397435, 1.0416797, 0.25805897, -1.0683194, 0.543335, 0.01733692, -0.10190649, -0.23771836, 1.170438, 0.86829615, 0.06207657, -0.36545753)
+transform = Transform3D(0.7002578, 0.96537715, -0.12043761, -0.9128479, 0.70331883, 0.3299567, 0.3364047, -0.10103949, 1.1460562, 0.53658724, 0.10869694, -0.31770325)
 layers = 2
 mesh = SubResource("ArrayMesh_28w5j")
 surface_material_override/0 = ExtResource("2_hgbsr")
@@ -1042,7 +1044,7 @@ mesh = SubResource("ArrayMesh_28w5j")
 surface_material_override/0 = ExtResource("2_hgbsr")
 
 [node name="thumb_1" type="MeshInstance3D" parent="fps_rig/shotgun/rigth_hand/hand/thumb_0" unique_id=1310531914]
-transform = Transform3D(0.9618236, -0.26863262, 0.052266914, 0.26745087, 0.96314806, 0.028556034, -0.05801189, -0.013487045, 0.99822456, 0.41884804, 0, -0.5414748)
+transform = Transform3D(0.9633691, -0.26710528, 0.023977784, 0.26331758, 0.95906293, 0.10421949, -0.050833806, -0.09408806, 0.99426496, 0.41884804, 0, -0.5414748)
 layers = 2
 mesh = SubResource("ArrayMesh_4haih")
 surface_material_override/0 = ExtResource("2_hgbsr")
@@ -1054,4 +1056,4 @@ mesh = SubResource("ArrayMesh_njlv8")
 surface_material_override/0 = ExtResource("2_hgbsr")
 
 [node name="Tinkercad GLTF Scene" parent="." unique_id=549357515 instance=ExtResource("3_hgbsr")]
-transform = Transform3D(0.0017632459, 0, 0, 0, 0.0017632459, 0, 0, 0, 0.0015104183, -0.006500095, -0.08656341, -1.1599216)
+transform = Transform3D(0.0017632459, 0, 0, 0, 0.0017632459, 0, 0, 0, 0.0015104183, -0.026018351, -0.017046511, -1.3020172)

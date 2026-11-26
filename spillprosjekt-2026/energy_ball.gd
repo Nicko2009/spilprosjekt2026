@@ -1,7 +1,7 @@
 extends Area3D
 
 var shooter: Node = null
-@export var speed: float = 8.0
+@export var speed: float = 25.0
 var direction: Vector3 = Vector3.ZERO
 
 func _ready():

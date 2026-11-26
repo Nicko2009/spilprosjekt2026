@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://dua8rudi1famm" path="res://wastednode.gd" id="1_hbd83"]
 
 [node name="Wastednode" type="Node2D" unique_id=1253242585]
+process_mode = 3
 script = ExtResource("1_hbd83")
 
 [node name="Wastedgodot" type="Sprite2D" parent="." unique_id=279921019]
@@ -16,8 +17,8 @@ offset_left = 401.0
 offset_top = 565.0
 offset_right = 769.0
 offset_bottom = 642.0
-theme_override_colors/font_color = Color(0.76679987, 0.20372874, 0.23484546, 1)
 theme_override_font_sizes/font_size = 40
+action_mode = 0
 text = "Play again
 "
 
