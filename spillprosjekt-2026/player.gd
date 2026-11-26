@@ -13,7 +13,7 @@ var health: int = 150
 @onready var health_bar: ProgressBar = $CanvasLayer/Control/HealthBar
 @onready var camera = $Head/Camera3D
 @onready var damage = $CanvasLayer/damage
- 
+@onready var flash = get_tree().current_scene.find_child("flash", true, false) 
  
 var gravity: float = ProjectSettings.get_setting(
     "physics/3d/default_gravity"
@@ -132,13 +132,20 @@ func shoot():
  
 	var camera = head.get_node("Camera3D")
 	var direction = -camera.global_transform.basis.z
-
- 
+	
 	var start_position = camera.global_position + direction * 1.5
  
 	projectile.global_position = start_position
 	projectile.setup(direction, self)
 	$ShootSound.play()
+	
+	if flash:
+		flash.global_position =camera.global_position + direction * 1.5
+		flash.visible = true
+		await get_tree().create_timer(0.05).timeout
+		flash.visible = false
+	
+	
 func die():
 	print("Player døde!")
 	var wasted_scene = load("res://wastednode.tscn")

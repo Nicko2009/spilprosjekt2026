@@ -935,7 +935,7 @@ script = ExtResource("16_q7fu7")
 
 [node name="Tinkercad GLTF Scene" parent="StaticBody3D" unique_id=1516851819 instance=ExtResource("21_jcvmf")]
 
-[node name="Mesh_Mesh_head_geo_001_lambert2SG_001" parent="StaticBody3D/Tinkercad GLTF Scene/Node" parent_id_path=PackedInt32Array(1516851819, 1809419312) index="0" unique_id=1683881990]
+[node name="Mesh_Mesh_head_geo_001_lambert2SG_001" parent="StaticBody3D/Tinkercad GLTF Scene/Node" parent_id_path=PackedInt32Array(1516851819, 1467049943) index="0" unique_id=903021699]
 surface_material_override/0 = SubResource("StandardMaterial3D_cc7hj")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=899549645]
@@ -1165,12 +1165,16 @@ offset_bottom = 23.0
 [node name="Wood_Road_Block_Large" parent="." unique_id=2076937903 instance=ExtResource("27_7fevm")]
 transform = Transform3D(1.477055, 0, 0, 0, 0.8229296, 0, 0, 0, 1, 163.35938, -2.2075057, 62.654198)
 
+[node name="flash" type="OmniLight3D" parent="." unique_id=191786795]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11265564, -0.15834236, -0.87524414)
+light_color = Color(1, 0.60784316, 0.14117648, 1)
+light_energy = 8.0
+
 [node name="player" parent="." unique_id=1947800497 instance=ExtResource("21_q7fu7")]
 transform = Transform3D(-0.9515732, 0, -0.30742225, 0, 1, 0, 0.30742225, 0, -0.9515732, 0, 1, 0)
 
 [node name="Marker3D" type="Marker3D" parent="." unique_id=1616632885]
-transform = Transform3D(0.22694574, 0, -0.9739074, 0, 1, 0, 0.9739074, 0, 0.22694574, 102.19932, 9.372922, 39.09613)
-transform = Transform3D(0.99568456, 0, -0.092802316, 0, 1, 0, 0.092802316, 0, 0.99568456, 100.408, 5, 14.551)
+transform = Transform3D(0.99568456, 0, -0.092802316, 0, 1, 0, 0.092802316, 0, 0.99568456, 99.663315, 10.059275, 42.355686)
 
 [node name="Door_12" parent="." unique_id=611545605 instance=ExtResource("21_g7ir1")]
 transform = Transform3D(1.3982949, 0, 0, 0, 2.7250848, 0, 0, 0, 0.99999994, 101.80716, 8.062531, 58.386696)
