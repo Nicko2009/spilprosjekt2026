@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://orsqfqylu0y7"]
+
+[ext_resource type="VideoStream" uid="uid://c61pv1j8kvudb" path="res://introspill-nqbq5t.ogv" id="1_7rdvx"]
+[ext_resource type="Script" uid="uid://bepeg7mvj6td3" path="res://intro_spill.gd" id="1_8knmv"]
+
+[node name="intro spill" type="Node2D" unique_id=1007155564]
+script = ExtResource("1_8knmv")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=32233105]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -18.0
+offset_top = -14.0
+offset_right = 1902.0
+offset_bottom = 1066.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.6209204, 0.63454115)
+stream = ExtResource("1_7rdvx")
+autoplay = true
+
+[connection signal="finished" from="VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]
