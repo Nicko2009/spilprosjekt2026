@@ -935,7 +935,7 @@ script = ExtResource("16_q7fu7")
 
 [node name="Tinkercad GLTF Scene" parent="StaticBody3D" unique_id=1516851819 instance=ExtResource("21_jcvmf")]
 
-[node name="Mesh_Mesh_head_geo_001_lambert2SG_001" parent="StaticBody3D/Tinkercad GLTF Scene/Node" parent_id_path=PackedInt32Array(1516851819, 1809419312) index="0" unique_id=1683881990]
+[node name="Mesh_Mesh_head_geo_001_lambert2SG_001" parent="StaticBody3D/Tinkercad GLTF Scene/Node" parent_id_path=PackedInt32Array(1516851819, 1467049943) index="0" unique_id=903021699]
 surface_material_override/0 = SubResource("StandardMaterial3D_cc7hj")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=899549645]

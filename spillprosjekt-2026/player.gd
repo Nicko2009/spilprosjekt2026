@@ -2,9 +2,9 @@
 extends CharacterBody3D
 
 @export var projectile_scene: PackedScene
-@export var max_health: int = 100
+@export var max_health: int = 150
 var health: int = 150
-
+@export var wasted_scene: PackedScene 
 @export var walk_speed: float = 5.0
 @export var sprint_speed: float = 8.0
 @export var jump_velocity: float = 4.5
@@ -13,6 +13,7 @@ var health: int = 150
 @onready var head: Node3D = $Head
 @onready var health_bar: ProgressBar = $CanvasLayer/Control/HealthBar
 @onready var camera = $Head/Camera3D
+
 
 var gravity: float = ProjectSettings.get_setting(
     "physics/3d/default_gravity"
@@ -115,7 +116,6 @@ func take_damage(amount: int):
 		
 func shoot():
 	if projectile_scene == null:
-		print("Ingen kule er valgt!")
 		return
 
 	var projectile = projectile_scene.instantiate()
@@ -132,6 +132,12 @@ func shoot():
 	
 	$ShootSound.play()
 func die():
+	print("Player døde!")
+	
+	var wasted_scene = load("res://wastednode.tscn")
+	var wasted = wasted_scene.instantiate()
+	
+	get_tree().root.add_child(wasted)
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	get_tree().paused = true
 
