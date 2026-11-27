@@ -133,6 +133,6 @@ func take_damage(amount: int):
 		if manager:
 			manager.enemy_defeated()		
 		
-	var fade = create_tween()
-	fade.tween_property(self, "scale", Vector3.ZERO, 0.4)
-	fade.tween_callback(queue_free)
+			var fade = create_tween()
+			fade.tween_property(self, "scale", Vector3.ZERO, 0.4)
+			fade.tween_callback(queue_free)
