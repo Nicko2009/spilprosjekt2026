@@ -1,8 +1,8 @@
 extends CharacterBody3D
  
 @export var projectile_scene: PackedScene
-@export var max_health: int = 150
-var health: int = 150
+@export var max_health: int = 200
+var health: int = 200
 @export var wasted_scene: PackedScene 
 @export var walk_speed: float = 5.0
 @export var sprint_speed: float = 8.0
